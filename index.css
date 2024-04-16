@@ -1,0 +1,785 @@
+/* 視覺圖---------------------------- */
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.banner-container img {
+    width: 95%;
+    height: auto;
+}
+
+.banner-slogan {
+    position: absolute;
+    top: 30%;
+    right: 90px;
+    text-align: right;
+}
+
+.banner-slogan h3 {
+    color: white;
+    font-size: 4vw;
+    text-align: justify;
+    padding: 10px;
+    letter-spacing: 0.1em;
+}
+
+.banner-slogan p {
+    color: white;
+    font-size: 3vw;
+}
+
+/* 視覺圖上的按鈕 */
+.btn {
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 15px 20px;
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+
+}
+
+.btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.btn:hover:before {
+    width: 100%;
+    background: #FFAB9D;
+}
+
+.btn:hover svg {
+    transform: translateX(0);
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+}
+
+.btn:active {
+    color: #fff;
+    transform: scale(0.96);
+}
+
+/* 簡介 -------------------*/
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-container {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    position: relative;
+
+}
+
+.intro-card {
+    position: relative;
+    margin: 200px 0;
+    height: 250px;
+    background-color: rgba(234, 234, 234, 0.7);
+    border-radius: 30px;
+
+}
+
+.intro-title,
+.intro-content {
+    text-align: center;
+    /* 字元間距 */
+    letter-spacing: 0.1em;
+    padding: 20px 0;
+}
+
+.intro-title {
+    font-size: 30px;
+}
+
+.intro-content {
+    font-size: 18px;
+    padding: 0 300px;
+
+}
+
+.intro-img1 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    transform: rotate(10deg) scale(1, 1);
+    overflow: hidden;
+    top: 80px;
+    left: 800px;
+
+}
+
+.intro-img1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.intro-img2 {
+    width: 200px;
+    height: 203px;
+    position: absolute;
+    transform: rotate(10deg) scale(1, 1);
+    overflow: hidden;
+    bottom: 200px;
+}
+
+.intro-img2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.intro-img3 {
+    width: 200px;
+    height: 203px;
+    position: absolute;
+    overflow: hidden;
+    left: 800px;
+    bottom: 100px;
+}
+
+.intro-img3 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* 輪播圖區----------------------- */
+/* 最新消息 */
+.slider {
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* background-color: #D2E3D9; */
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider-news {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    justify-content: center;
+}
+
+.slider-news img {
+    width: 40%;
+    align-self: center;
+    border-radius: 50%;
+    top: 50px;
+    position: absolute;
+}
+
+.news-title {
+    color: #5c5757;
+    text-align: center;
+    align-content: center;
+    font-size: 2em;
+    font-weight: 700;
+    border-right: 1px solid #5c5757;
+    padding-right: 20px;
+    /* text-decoration-thickness: 10px; */
+    /* position: relative; */
+    width: 3%;
+    height: 15%;
+
+}
+
+.slider-news p {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 25x;
+    line-height: 2.3em;
+    color: rgba(115, 115, 115, 0.30);
+}
+
+/*服務項目 --------------------*/
+.silder-service {
+    /* width: 90%; */
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px 50px 50px 0px;
+    height: 30%;
+    position: absolute;
+    top: 35%;
+    /* 彈性列空間 */
+    align-content: center;
+    display: flex;
+    z-index: 2;
+}
+
+.service-title {
+    color: #5c5757;
+    text-align: center;
+    align-content: center;
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid #5c5757;
+    /* text-decoration-thickness: 10px; */
+    /* position: relative; */
+    width: 15%;
+    height: 15%;
+    margin: 5% 0 0 5%;
+
+}
+
+/* card 2 */
+.service-card2 {
+    width: 25%;
+    height: 58.33%;
+    position: absolute;
+    display: flex;
+    left: 300px;
+    bottom: 90px;
+}
+
+.service-card2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px 0px 60px 0px;
+}
+
+.service-card2 p {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    /* 彈性列空間 */
+    align-content: center;
+    /* flex子物件 */
+    align-self: flex-end;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.67);
+    border-radius: 0px 0px 60px 0px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.service-card2:hover img {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 4px;
+    bottom: 0;
+    transition-duration: .3s;
+    z-index: 1;
+}
+
+.service-card2:hover p {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.67);
+    border-radius: 4px;
+    transition-duration: .3s;
+    font-weight: 600;
+    font-size: 25px;
+    z-index: 1;
+}
+
+/* card 3 */
+.service-card3 {
+    width: 25%;
+    height: 58.33%;
+    position: absolute;
+    display: flex;
+    left: 800px;
+    bottom: 140px;
+}
+
+.service-card3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px 0px 60px 0px;
+}
+
+.service-card3 p {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    /* 彈性列空間 */
+    align-content: center;
+    /* flex子物件 */
+    align-self: flex-end;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.67);
+    border-radius: 0px 0px 60px 0px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.service-card3:hover img {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 4px;
+    bottom: 0;
+    transition-duration: .3s;
+    z-index: 1;
+}
+
+.service-card3:hover p {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.67);
+    border-radius: 4px;
+    transition-duration: .3s;
+    font-weight: 600;
+    font-size: 25px;
+    z-index: 1;
+}
+
+/* card 1 */
+.service-card1 {
+    width: 25%;
+    height: 58.33%;
+    position: absolute;
+    display: flex;
+    left: 550px;
+    bottom: 10px;
+
+}
+
+.service-card1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px 0px 60px 0px;
+}
+
+.service-card1 p {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    /* 彈性列空間 */
+    align-content: center;
+    /* flex子物件 */
+    align-self: flex-end;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.67);
+    border-radius: 0px 0px 60px 0px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.service-card1:hover img {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 4px;
+    bottom: 0;
+    transition-duration: .3s;
+}
+
+.service-card1:hover p {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.67);
+    border-radius: 4px;
+    transition-duration: .3s;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* 服務項目的按鈕 */
+.service-btn {
+    position: absolute;
+    color: #090909;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 15px 20px;
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    left: 80%;
+}
+
+.service-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(201, 198, 179, 1);
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.service-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.service-btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #090909;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover:before {
+    width: 100%;
+    background: rgba(201, 198, 179, 1);
+}
+
+.service-btn:hover svg {
+    transform: translateX(0);
+}
+
+.service-btn:hover,
+.service-btn:focus {
+    color: #090909;
+}
+
+.service-btn:active {
+    color: #090909;
+    transform: scale(0.96);
+}
+
+/* 熱賣商品-------------------- */
+.silder-bestseller {
+    right: 0;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    /* width: 86%;
+    height: 40%; */
+    position: absolute;
+    top: 70%;
+    /* 彈性列空間 */
+    align-content: center;
+    background: #c9c6b3;
+    border-radius: 0px 0px 0px 400px;
+    display: flex;
+}
+
+.bestseller-box {
+    position: absolute;
+    width: 800px;
+    height: 220px;
+    border: 2px solid rgba(145, 123, 90, 1);
+    right: 0;
+    top: 60px;
+
+}
+
+.bestseller-card-list {
+    right: -30px;
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.bestseller-card {
+    width: 80%;
+    height: 45%;
+    padding-top: 120px;
+    /* position: relative; */
+    justify-self: flex-end;
+
+}
+
+.bestseller-title {
+    color: #5c5757;
+    text-align: center;
+    align-content: center;
+    font-size: 2em;
+    font-weight: 700;
+    /* text-decoration-thickness: 10px; */
+    /* position: relative; */
+    width: 5%;
+    height: 40%;
+    margin: 10% 10% 0 10%;
+}
+
+.bestseller-card img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bestseller-card p {
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.bestseller-btn {
+    position: absolute;
+    color: #090909;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 15px 20px;
+    margin-top: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    left: 80%;
+}
+
+.bestseller-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background:
+        rgba(210, 226, 216, 1);
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.bestseller-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.bestseller-btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #090909;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.bestseller-btn:hover:before {
+    width: 100%;
+    background: rgba(210, 226, 216, 1);
+}
+
+.bestseller-btn:hover svg {
+    transform: translateX(0);
+}
+
+.bestseller-btn:hover,
+.bestseller-btn:focus {
+    color: #090909;
+}
+
+.bestseller-btn:active {
+    color: #090909;
+    transform: scale(0.96);
+}
+
+/* 選擇我們----------------------- */
+
+.choice {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    margin-top: 300px;
+    /* height: 600px;
+    overflow-y: scroll; */
+}
+
+.choice-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.choice-head img {
+    z-index: -1;
+}
+
+.choice-title {
+    position: absolute;
+    color: #5c5757;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    font-size: 2em;
+    font-weight: 700;
+    /* text-decoration-thickness: 10px; */
+    /* position: relative; */
+    width: 5%;
+    height: 40%;
+}
+
+.choice-card-list {
+    background-image: url(/img/choice-bgc.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+
+}
+
+.choice-card {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.choice-head img {
+    width: 40%;
+    height: 40%;
+}
+
+.choice-card-img img {
+    border-radius: 0px 70px 70px 0px;
+    position: absolute;
+    width: 399.75px;
+    height: 195px;
+    position: relative;
+}
+
+.choice-txt {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    padding: 30px;
+    left: 20px;
+    position: absolute;
+}
+
+.choice-card:nth-child(1) .choice-txt,
+.choice-card:nth-child(3) .choice-txt,
+.choice-card:nth-child(5) .choice-txt {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    padding: 30px;
+    left: 300px;
+    position: absolute;
+
+}
+
+.choice-card:nth-child(2) .choice-txt,
+.choice-card:nth-child(4) .choice-txt {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    padding: 30px;
+    left: 300px;
+    position: absolute;
+}
+
+.choice-card:nth-child(1) .card-left,
+.choice-card:nth-child(3) .card-left,
+.choice-card:nth-child(5) .card-left {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 13%;
+    width: auto;
+}
+
+.choice-card:nth-child(2) .card-right,
+.choice-card:nth-child(4) .card-right {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+    width: auto;
+}

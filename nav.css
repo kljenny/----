@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 導覽列 ---------------------*/
+.main-header {
+    background-color: rgba(85, 85, 85, 0.3333);
+    padding: 10px 0;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+
+
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 45px;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    font-family: "Noto Serif TC", Noto Serif TC;
+    font-size: 16px;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+
+}
+
+.nav-left {
+
+    margin-left: 200px;
+}
+
+.nav-right {
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 150px;
+
+}
+
+.nav-logo {
+    position: absolute;
+    top: -10.8px;
+    justify-content: center;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+fixed .nav-icon {
+    margin-right: 50px;
+
+}
+
+.nav-icon i {
+    margin-right: 10px;
+}
+
+.main-header {
+    background-color: rgba(85, 85, 85, 0.3333);
+    padding: 10px 0;
+    position: relative;
+    position: fixed;
+    width: 100%;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+
+
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    height: 45px;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    font-family: "Noto Serif TC", Noto Serif TC;
+    font-size: 16px;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+
+}
+
+.nav-left {
+    margin-left: 200px;
+
+}
+
+.nav-right {
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 150px;
+
+}
+
+.nav-logo {
+    position: absolute;
+    top: -5.8px;
+    justify-content: center;
+}
+
+.nav-logo img {
+    width: 95%;
+}
+
+.nav-icon {
+    margin-right: 50px;
+
+}
+
+.nav-icon i {
+    margin-right: 10px;
+}
+
+/* footer------------------------------------- */
+
+footer {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    /* left: 0; */
+    font-family: 'Nunito Sans', 'Noto Serif TC', sans-serif;
+    font-weight: 400;
+    background-color: rgba(201, 198, 179, 1);
+    background-size: cover;
+}
+
+
+.footer-container {
+    position: relative;
+    padding: 80px;
+    color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container>span {
+    top: 0;
+    left: 0;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'NotoSerif-DisplayRegular', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.footer-connection {
+    /* margin: 265px 0 0 0; */
+    position: absolute;
+    top: 0;
+    left: 500px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-service {
+    width: 30%;
+    min-width: 300px;
+    /* margin: 265px 0 0 0; */
+    line-height: 30px;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.to-top a {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    bottom: 20px;
+    right: 10px;
+    color: #2B2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration-color: #f000;
+    position: fixed;
+    transition: .5s;
+    /* background-color: #fff; */
+
+    @media (width <=768px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.to-top a i {
+    font-size: 25px;
+    color: #555;
+
+    @media (width <=768px) {
+        font-size: 20px;
+    }
+}
+
+.to-top a:hover {
+    border-radius: 30px;
+    background-color: #2B2B2B;
+
+    @media (width <=768px) {
+        border-radius: 50px;
+        background-color: #fff;
+    }
+}
+
+.to-top a:hover i {
+    color: #aaa;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    width: 600px;
+    margin-top: 10px;
+    line-height: 15px;
+    position: absolute;
+    bottom: 0;
+    top: 160px;
+    align-self: center;
+}
