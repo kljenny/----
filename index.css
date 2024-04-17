@@ -23,11 +23,13 @@
     text-align: justify;
     padding: 10px;
     letter-spacing: 0.1em;
+    font-family: 'Oooh Baby', 'Noto Serif TC', serif;
 }
 
 .banner-slogan p {
     color: white;
     font-size: 3vw;
+    font-family: 'Oooh Baby', 'Noto Serif TC', serif;
 }
 
 /* 視覺圖上的按鈕 */
