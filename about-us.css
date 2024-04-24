@@ -1,0 +1,233 @@
+/* 標題==================== */
+.news-title-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+}
+
+.news-title span {
+    font-size: 35px;
+}
+
+.news-title h2 {
+    font-size: 35px;
+    background: url(/img/about-title-bgc.png);
+}
+
+.news-title h2::after {
+    width: 100%;
+    content: "";
+    border-bottom: 0.5px solid #2B2B2B;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+/* 內文 */
+/* 品牌故事 */
+.section-story {
+    width: 100%;
+}
+
+.story-container {
+    width: 80%;
+    margin: auto;
+}
+
+.story {
+    width: 60%;
+    margin: auto;
+    padding: 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.story .pic {
+    width: 40%;
+
+}
+
+.story .story-box {
+    position: absolute;
+    top: 20%;
+    right: 80%;
+    width: 30%;
+    height: 70%;
+    background-color: #D2E3D9;
+    z-index: -1;
+}
+
+.story .pic img {
+    width: 100%;
+}
+
+.story .story-text {
+    width: 50%;
+}
+
+.story .story-text h2,
+.story .story-text h4 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.story .story-text h2 {
+    font-size: 24px;
+    letter-spacing: 0.3rem;
+}
+
+.story .story-text h4 {
+    padding-bottom: 30px;
+}
+
+.story .story-text p {
+    font-family: 'NotoSerif-DisplayRegular';
+}
+
+/* 我們的團隊 */
+.section-teams {
+    width: 100%;
+    background-color: #EFE2D9;
+}
+
+.teams-container {
+    width: 80%;
+    margin: auto;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    padding: 30px 0px 60px 0px;
+}
+
+.teams-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams-card {
+    width: 30%;
+    padding: 0 20px;
+}
+
+.member-pic img {
+    width: 100%;
+    border-radius: 100px 100px 0px 0px;
+    /* aspect-ratio: 4/3; */
+    object-fit: cover;
+    object-position: center center
+}
+
+.member-info {
+    background-color: #ffffff87;
+    font-family: 'NotoSerif-DisplayRegular';
+    padding: 10px 20px;
+}
+
+.teams-container h2,
+.teams-container h4 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.teams-container h2 {
+    font-size: 24px;
+    letter-spacing: 0.3rem;
+}
+
+.teams-container h4 {
+    padding-bottom: 30px;
+}
+
+.teams-container .member-info h4 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* 門市資訊 */
+.section-shop {
+    width: 100%;
+
+}
+
+.shop-container {
+    width: 90%;
+    margin: auto;
+}
+
+.shop {
+    width: 60%;
+    margin: auto;
+    padding: 10% 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.shop .pic {
+    width: 33%;
+    right: -32%;
+    top: -5%;
+    position: absolute;
+    background-color: brown;
+    border-radius: 48%;
+}
+
+.shop .shop-box {
+    position: absolute;
+    top: 20%;
+    right: 80%;
+    width: 30%;
+    height: 70%;
+    background-color: #D2E3D9;
+    z-index: -1;
+}
+
+.shop .pic img {
+    width: 95%;
+    border-radius: 50%;
+}
+
+.shop .shop-text {
+    width: 50%;
+}
+
+.shop-info h2,
+.shop-info h4 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.shop-info h2 {
+    font-size: 24px;
+    letter-spacing: 0.3rem;
+}
+
+.shop-info h4 {
+    padding-bottom: 30px;
+}
+
+.shop-info p {
+    text-align: center;
+    font-family: 'NotoSerif-DisplayRegular';
+    padding: 10px 20px;
+}
+
+.shop-googleMap {
+    width: 300px;
+    height: auto;
+}
+
+.shop-googleMap {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}

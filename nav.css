@@ -6,23 +6,25 @@
 
 /* 導覽列 ---------------------*/
 .main-header {
-    background-color: rgba(85, 85, 85, 0.3333);
-    padding: 10px 0;
-    position: relative;
-    position: fixed;
+    /* position: relative; */
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
 }
 
-.container {
+.nav-container {
     display: flex;
+    position: relative;
     justify-content: center;
     /* 水平居中 */
     align-items: center;
     /* 垂直居中 */
-
-
+    height: 75px;
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.1);
 }
 
 .nav-left,
@@ -36,7 +38,7 @@
 .nav-left a,
 .nav-right a {
     text-decoration: none;
-    color: white;
+    color: #131313;
     font-family: "Noto Serif TC", Noto Serif TC;
     font-size: 16px;
     justify-content: center;
@@ -46,21 +48,22 @@
 
 }
 
-.nav-left {
 
-    margin-left: 200px;
+.nav-left {
+    position: absolute;
+    left: 330px;
 }
 
 .nav-right {
     flex-grow: 1;
     justify-content: flex-end;
-    margin-right: 150px;
-
+    position: absolute;
+    right: 340px;
 }
 
 .nav-logo {
     position: absolute;
-    top: -10.8px;
+    top: 0.6px;
     justify-content: center;
 }
 
@@ -68,86 +71,80 @@
     width: 100%;
 }
 
-fixed .nav-icon {
-    margin-right: 50px;
-
-}
-
-.nav-icon i {
-    margin-right: 10px;
-}
-
-.main-header {
-    background-color: rgba(85, 85, 85, 0.3333);
-    padding: 10px 0;
-    position: relative;
-    position: fixed;
-    width: 100%;
-
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-    /* 垂直居中 */
-
-
-}
-
-.nav-left,
-.nav-right {
+/* --------------------- */
+.nav-icon form {
+    width: 150px;
+    height: 25px;
     display: flex;
     align-items: center;
-    gap: 40px;
-
-    height: 45px;
+    border-radius: 100px;
+    border: #fff 1px solid;
+    padding: 5px 10px;
 }
 
-.nav-left a,
-.nav-right a {
+.nav-icon form input,
+.nav-icon form button {
+    border: none;
+    background-color: transparent;
+    color: #ffffffa0;
     text-decoration: none;
-    color: white;
-    font-family: "Noto Serif TC", Noto Serif TC;
-    font-size: 16px;
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-    /* 垂直居中 */
-
+    position: relative;
 }
 
-.nav-left {
-    margin-left: 200px;
-
+.nav-icon form input {
+    width: 130px;
+    color: #2B2B2B;
 }
 
-.nav-right {
-    flex-grow: 1;
-    justify-content: flex-end;
-    margin-right: 150px;
-
+.nav-icon form button {
+    width: 20px;
 }
 
-.nav-logo {
-    position: absolute;
-    top: -5.8px;
-    justify-content: center;
+.nav-icon form input:focus,
+.nav-icon form button:focus {
+    outline: none;
 }
 
-.nav-logo img {
-    width: 95%;
-}
 
 .nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 6%;
     margin-right: 50px;
+    position: absolute;
+    right: 10px;
 
 }
 
 .nav-icon i {
+    color: black;
     margin-right: 10px;
 }
+
+/* .main-header {
+    background-color: #F8F8F8;
+    padding: 10px 0;
+    position: relative;
+    position: fixed;
+    width: 100%;
+
+} */
+
+
+.banners {
+    width: 80%;
+    height: 120px;
+    background: url(./img/banners.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-left: 100%;
+    border-radius: 0 0 0 10px;
+
+
+}
+
 
 /* footer------------------------------------- */
 
@@ -163,8 +160,10 @@ footer {
     /* left: 0; */
     font-family: 'Nunito Sans', 'Noto Serif TC', sans-serif;
     font-weight: 400;
-    background-color: rgba(201, 198, 179, 1);
+    background-color: rgba(85, 85, 85, 0.1);
     background-size: cover;
+    font-family: Georgia, serif;
+
 }
 
 
@@ -193,11 +192,12 @@ footer {
 .footer-connection {
     /* margin: 265px 0 0 0; */
     position: absolute;
-    top: 0;
-    left: 500px;
+    top: 20px;
+    left: 400px;
     line-height: 30px;
     display: flex;
     justify-content: space-between;
+    color: #6F7170;
 }
 
 .footer-service {
@@ -208,7 +208,7 @@ footer {
     display: flex;
     font-size: 14px;
     text-align: center;
-
+    justify-content: center;
 }
 
 .to-top a {
@@ -261,9 +261,10 @@ footer {
     text-align: center;
     width: 600px;
     margin-top: 10px;
-    line-height: 15px;
     position: absolute;
     bottom: 0;
-    top: 160px;
+    top: 130px;
     align-self: center;
+    display: flex;
+    line-height: 1.5;
 }

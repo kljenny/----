@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aitai Flower</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="grid.css">
+
+
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
     <!-- CDN -->
@@ -23,11 +25,11 @@
 <body>
     <!-- 導覽列 -->
     <header class="main-header">
-        <div class="container">
+        <div class="nav-container">
             <nav class="nav-left">
-                <a href="#">最新活動</a>
-                <a href="#">商品導覽</a>
-                <a href="#">花藝空間</a>
+                <a href="news.html">最新活動</a>
+                <a href="product-list.html">商品導覽</a>
+                <!-- <a href="#">花藝空間</a> -->
 
             </nav>
             <a class="nav-logo" href="#">
@@ -38,18 +40,21 @@
                 <a href="contact-us.html">連絡我們</a>
             </nav>
             <nav class="nav-icon">
-                <i class="fa-solid fa-magnifying-glass"><a href="#"></a></i>
+                <form>
+                    <input type="search" placeholder="請輸入關鍵字">
+                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
+                </form>
                 <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
-                <i class="fa-solid fa-user"><a href="#"></a></i>
+                <i class="fa-solid fa-user"><a href="login.html"></a></i>
             </nav>
         </div>
     </header>
     <!-- banner視覺圖 -->
     <section class="banner">
         <div class="banner-container">
-            <img src="/img/banner.svg" alt="banner">
+            <img src="/img/banner.jpg" alt="banner">
             <div class="banner-slogan">
-                <h3>生活ㆍ要有點不一樣</h3>
+                <p>生活ㆍ要有點不一樣</p>
                 <p>Aitai Flower Shop</p>
                 <a class="btn" href="javascript: void(0)">
                     <span>熱銷商品</span>
@@ -80,15 +85,6 @@
         <!-- 最新活動 -->
         <div class="slider-news">
             <div class="news-title">最新消息</div>
-            <p>AITAI FLOWER SHOP IS<br>NOT JUST A FLORIST; IT'S A BRIDGE <br>FOR EMOTIONAL CONNECTIONS BETWEEN YOU, YOUR
-                FAMILY, ANDEVERY <br>MOMENT WITHLOVE ND WARMTHLAITAI<br> FLOWER SHOP IS NOT JUST A FLORIST; IT'S A
-                BRIDGE FOR EMOTIONAL CONNECTIONS BETWEEN YOU<br>YOUR FAMILY, AND YOUR LOVED >ONES. WE ARE COMMITTED TO
-                FILLING EVERY MOMENTWITH
-                O FILLINGEVERY MOMENT WITH OVEAND WARMTHO FILLING
-                EVERY MOMENT WITHLOVE AND WARMTHLOVE ITTED TO FILLING EVERY MOMENT WITH<br> O FILLINGEVERY MOMENT
-                WITH OVEAND WARMTHO FILLING EVERY MOMENT <br>WITHLOVE AND<br> WARMTHLOVE
-                AND <br>WARMTHOVE
-            </p>
             <img src="/img/news01.jpg" alt="news img">
         </div>
         <!-- 服務項目 -->

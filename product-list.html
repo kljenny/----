@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品總覽</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="product-list.css">
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+    </style>
 </head>
 
 <body>
     <!-- 導覽列 -->
     <header class="main-header">
-        <div class="container">
+        <div class="nav-container ">
             <nav class="nav-left">
                 <a href="#">最新活動</a>
                 <a href="#">商品導覽</a>
-                <a href="#">花藝空間</a>
-
+                <!-- <a href="#">花藝空間</a> -->
             </nav>
             <a class="nav-logo" href="#">
                 <img src="/img/logo.svg" alt="logo">
@@ -34,28 +36,222 @@
                 <a href="#">連絡我們</a>
             </nav>
             <nav class="nav-icon">
-                <i class="fa-solid fa-magnifying-glass"><a href="#"></a></i>
+                <form>
+                    <input type="search" placeholder="請輸入關鍵字">
+                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
+                </form>
                 <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
                 <i class="fa-solid fa-user"><a href="#"></a></i>
             </nav>
         </div>
+        <div class="banners"></div>
     </header>
-    <div class="products-overview">
-        <div class="products-banner">
-            <div class="products-banner-img">
-                <img src="/img/nav-img.png" alt="products-banner">
+
+
+
+    <!-- 商品總覽標題------------------>
+    <div class="news-title-container">
+        <div class="news-title">
+            <span>商品總覽</span>
+            <h2>Product List</h2>
+        </div>
+    </div>
+
+
+    <!-- 商品列表 -->
+
+    <div class="section-products">
+        <div class="products-container">
+            <!-- 商品總覽側邊選單------------------>
+            <div class="products-side-menu">
+                <nav class="products-nav">
+                    <a href="#">
+                        -全部商品-</a>
+                    <a href="#">
+                        <img src="/img/list-icon01.svg" alt=""></i><span>鮮花花束</span></a>
+                    <a href="#">
+                        <img src="/img/list-icon02.svg" alt=""><span>乾燥花束</span></a>
+                    <a href="#"><img src="/img/list-icon03.svg" alt=""><span>周花服務</span></a>
+                </nav>
             </div>
-            <div class="products-main-title">
-                <div class="products-title">
-                    <h1>商品總覽</h1>
+            <!-- 商品列表------------>
+            <div class="card-items">
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product01.jpg" alt="list_item_01">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>絮語玫瑰</span>
+                                <br></a>
+                            <p>NT$ 799</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-                <div class="bottom-line"></div>
-                <div class="products-sub-title">
-                    <h2>P<span>products</span></h2>
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product02.png" alt="list_item_02">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>厄瓜多大朵玫瑰 </span>
+                                <br></a>
+                            <p>NT$ 999</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
+                </div>
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product03.png" alt="list_item_03">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>鬱金紫香譚 </span>
+                                <br></a>
+                            <p>NT$ 799</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
+                </div>
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product04.png" alt="list_item_04">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>向日葵乾燥花束</span>
+                                <br></a>
+                            <p> NT$ 599</p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product05.png" alt="list_item_05">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>單枝康乃馨</span><br></a>
+                            <p> NT$ 299 </p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product06.png" alt="list_item_06">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>康乃馨花束</span><br></a>
+                            <p> NT$ 699 </p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product07.jpg" alt="list_item_07">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>桔梗桌花</span><br></a>
+                            <p> NT$ 699 </p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/product08.png" alt="list_item_08">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>卡斯比亞桌花</span><br></a>
+                            <p> NT$ 699 </p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="item-img">
+                        <a href="#">
+                            <img src="/img/bestseller03.jpg">
+                        </a>
+                    </div>
+                    <div class="item-text">
+                        <div class="item-txt">
+                            <a href="#">
+                                <span>繡球花盅</span><br></a>
+                            <p> NT$ 699 </p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- footer -->
+    <section>
+        <footer>
+            <div class="footer-container">
+                <span>CONTACT US</span>
+
+                <div class="footer-connection">
+                    <div class="footer-service">
+                        <span>服務條款<br>免責聲明<br>隱私權保護</spen>
+                    </div>
+                    <div class="connect">
+                        <div class="connect-info">
+                            <span> 聯絡我們<br> Tel : (03)425-1108<br> Email : Aitai Flower_Studio@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <span>
+                            ©AitaiFlower Studio Co. All rights reserved. <br>
+                            本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+                        </span>
+                    </div>
+                    <div class="to-top">
+                        <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+        </footer>
+    </section>
 </body>
 
 </html>

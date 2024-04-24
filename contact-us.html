@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>聯絡我們</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="contact-us.css">
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous">
@@ -20,11 +20,11 @@
 <body>
     <!-- 導覽列 -->
     <header class="main-header">
-        <div class="container">
+        <div class="nav-container">
             <nav class="nav-left">
                 <a href="#">最新活動</a>
                 <a href="#">商品導覽</a>
-                <a href="#">花藝空間</a>
+                <!-- <a href="#">花藝空間</a> -->
 
             </nav>
             <a class="nav-logo" href="#">
@@ -35,7 +35,10 @@
                 <a href="contact-us.html">連絡我們</a>
             </nav>
             <nav class="nav-icon">
-                <i class="fa-solid fa-magnifying-glass"><a href="#"></a></i>
+                <form>
+                    <input type="search" placeholder="請輸入關鍵字">
+                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
+                </form>
                 <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
                 <i class="fa-solid fa-user"><a href="#"></a></i>
             </nav>

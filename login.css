@@ -1,0 +1,176 @@
+body {
+    background: url("/img/bestseller01.jpg")no-repeat center center /cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCard {
+    width: 350px;
+    height: 600px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    border: 10px solid #fff;
+    box-shadow: 0 0 60px #000;
+    backdrop-filter: blur(5px);
+    font-family: 'Nunito Sans', 'Noto Serif TC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loginCard h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.form {
+    width: 250px;
+    color: #fff;
+}
+
+.form .group {
+    margin-bottom: 20px;
+}
+
+.form label {
+    line-height: 2;
+
+}
+
+.form input {
+    width: 100%;
+    border: 1px solid #aaa;
+    line-height: 3;
+    border-radius: .5rem;
+}
+
+.form .recovery-pass {
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.form .recovery-pass a {
+    color: #fff;
+}
+
+.form .recovery-pass a:hover {
+    color: blue;
+}
+
+.form button {
+    width: 100%;
+    padding: 14px 0;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #2b2b2b;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.form .registerNow {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form .registerNow a {
+    color: #fff;
+}
+
+.form .registerNow a:hover {
+    color: blue;
+}
+
+.other-login-way h4::before {
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 1px;
+    background-color: #ddd;
+    position: relative;
+    top: -5px;
+    right: 10px;
+}
+
+.other-login-way h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.other-login-way h4::after {
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 1px;
+    background-color: #ddd;
+    position: relative;
+    top: -5px;
+    right: -10px;
+}
+
+.social-web {
+    text-align: center;
+}
+
+.social-web a img {
+    width: 2rem;
+    gap: 10px;
+    padding-right: 20px;
+
+}
+
+/* 會員註冊 -----------------*/
+/* .loginCard {
+    width: 350px;
+    height: 600px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    border: 10px solid #fff;
+    box-shadow: 0 0 60px #000;
+    backdrop-filter: blur(5px);
+    font-family: 'Nunito Sans', 'Noto Serif TC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} */
+
+
+/* .container-form .registerCard {
+    display: none;
+}
+
+.container-form.active .registerCard {
+    display: block;
+}
+
+.container-form.active .loginCard {
+    display: none;
+} */
+
+/* 取消按鈕---------------- */
+.card-login .container-form .closeBtn {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    padding: 10px;
+    background-color: #2b2b2b;
+    border-radius: 5px 20px 5px 5px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+/* .card-login .container-form .closeBtn i {
+    color: #eee;
+    font-size: .7rem;
+    font-weight: 300;
+} */

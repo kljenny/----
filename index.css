@@ -17,13 +17,12 @@
     text-align: right;
 }
 
-.banner-slogan h3 {
+.banner-slogan p:first-child {
     color: white;
     font-size: 4vw;
-    text-align: justify;
-    padding: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     font-family: 'Oooh Baby', 'Noto Serif TC', serif;
+    text-align: right;
 }
 
 .banner-slogan p {
@@ -222,17 +221,33 @@
 }
 
 .news-title {
-    color: #5c5757;
+    /* color: #5c5757;
     text-align: center;
     align-content: center;
     font-size: 2em;
     font-weight: 700;
     border-right: 1px solid #5c5757;
-    padding-right: 20px;
+    padding-right: 20px; 
+    width: 3%;
+    height: 15%; */
     /* text-decoration-thickness: 10px; */
     /* position: relative; */
-    width: 3%;
-    height: 15%;
+
+    color: #5c5757;
+    text-align: center;
+    /* align-content: center; */
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    border-bottom: 1px solid #5c5757;
+    /* text-decoration-thickness: 10px; */
+    position: absolute;
+    width: 15%;
+    left: 0;
+    margin: 10%;
+    padding-bottom: 10px;
+
+
 
 }
 
@@ -249,7 +264,7 @@
 /*服務項目 --------------------*/
 .silder-service {
     /* width: 90%; */
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.5);
@@ -268,11 +283,12 @@
     text-align: center;
     align-content: center;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: 0.3em;
     border-bottom: 1px solid #5c5757;
     /* text-decoration-thickness: 10px; */
     /* position: relative; */
-    width: 15%;
+    /* width: 15%; */
     height: 15%;
     margin: 5% 0 0 5%;
 
@@ -284,7 +300,7 @@
     height: 58.33%;
     position: absolute;
     display: flex;
-    left: 300px;
+    left: 280px;
     bottom: 90px;
 }
 
@@ -339,7 +355,7 @@
     height: 58.33%;
     position: absolute;
     display: flex;
-    left: 800px;
+    left: 850px;
     bottom: 140px;
 }
 
@@ -562,12 +578,12 @@
     text-align: center;
     align-content: center;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
     /* text-decoration-thickness: 10px; */
     /* position: relative; */
     width: 5%;
     height: 40%;
-    margin: 10% 10% 0 10%;
+    margin: 6% 10% 0 10%;
 }
 
 .bestseller-card img {
@@ -579,6 +595,7 @@
 .bestseller-card p {
     font-size: 20px;
     padding-top: 4px;
+    font-family: Georgia, serif;
 }
 
 .bestseller-btn {
@@ -658,7 +675,7 @@
     max-width: 1200px;
     margin: auto;
     position: relative;
-    margin-top: 300px;
+    margin-top: 50px;
     /* height: 600px;
     overflow-y: scroll; */
 }
@@ -680,11 +697,11 @@
     text-align: center;
     align-content: center;
     align-self: center;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.5em;
+    font-weight: 500;
     /* text-decoration-thickness: 10px; */
     /* position: relative; */
-    width: 5%;
+    width: 2%;
     height: 40%;
 }
 
@@ -710,8 +727,8 @@
 }
 
 .choice-head img {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
 }
 
 .choice-card-img img {
@@ -738,7 +755,7 @@
 .choice-card:nth-child(1) .choice-txt,
 .choice-card:nth-child(3) .choice-txt,
 .choice-card:nth-child(5) .choice-txt {
-    background-color: #fff;
+    background-color: #F8FAE5;
     border-radius: 30px;
     width: 400px;
     height: 90px;
@@ -753,7 +770,7 @@
 
 .choice-card:nth-child(2) .choice-txt,
 .choice-card:nth-child(4) .choice-txt {
-    background-color: #fff;
+    background-color: #F8FAE5;
     border-radius: 30px;
     width: 400px;
     height: 90px;

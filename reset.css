@@ -108,7 +108,9 @@ section {
 }
 
 body {
-    line-height: 1;
+    line-height: 1.5;
+    font-family: 'Oooh Baby', 'Noto Serif TC', serif;
+    color: #333333,
 }
 
 ol,
