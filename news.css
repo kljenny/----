@@ -128,7 +128,7 @@
 /* 按鈕樣式 */
 
 
-.btn {
+.news-card-btn {
     align-self: center;
     position: absolute;
     bottom: 20px;
@@ -150,7 +150,7 @@
 
 }
 
-.btn span {
+.news-car-btn span {
     position: absolute;
     width: 25%;
     height: 100%;
@@ -163,72 +163,27 @@
     z-index: -1;
 }
 
-.btn:hover,
-.btn:focus {
+.news-card-btn:hover,
+.news-card-btn:focus {
     color: #fff;
 }
 
-.btn:hover span {
+.news-card-btn:hover span {
     transform: translateY(0) scale(2);
 }
 
-.btn span:nth-child(1) {
+.news-card-btn span:nth-child(1) {
     --n: 1;
 }
 
-.btn span:nth-child(2) {
+.news-card-btn span:nth-child(2) {
     --n: 2;
 }
 
-.btn span:nth-child(3) {
+.news-card-btn span:nth-child(3) {
     --n: 3;
 }
 
-.btn span:nth-child(4) {
+.news-card-btn span:nth-child(4) {
     --n: 4;
 }
-
-/*
-.news-container {
-    padding: 40px 0 60px;
-}
-
-.news-card {
-    width: 220px;
-    height: 100px;
-    margin: 0 10px;
-    text-align: center;
-    padding: 0px 20px;
-    display: flex;
-}
-
-.news-card img {
-    width: 100%;
-    border-radius: 10%;
-} */
-/* 
-.news-card .txt {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.news-card h2 {
-    color: #fde4de;
-    text-align: left;
-    font-size: 50px;
-    font-weight: 400;
-    position: relative;
-    height: 63px;
-    -webkit-text-stroke: 2px #e79686;
-}
-
-.news-card p {
-    width: 300px;
-    margin: auto;
-    padding: 0px 0px 40px;
-    text-align: center;
-} */

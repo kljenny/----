@@ -32,7 +32,7 @@
 }
 
 /* 視覺圖上的按鈕 */
-.btn {
+.banner-btn {
     position: absolute;
     color: #fff;
     font-size: 1rem;
@@ -50,7 +50,7 @@
     right: 30px;
 }
 
-.btn:before {
+.banner-btn:before {
     content: "";
     position: absolute;
     top: 0;
@@ -63,13 +63,13 @@
     transition: all 0.3s ease;
 }
 
-.btn span {
+.banner-btn span {
     position: relative;
     z-index: 1;
 
 }
 
-.btn svg {
+.banner-btn svg {
     position: relative;
     top: 0;
     margin-left: 10px;
@@ -82,21 +82,21 @@
     transition: all 0.3s ease;
 }
 
-.btn:hover:before {
+.banner-btn:hover:before {
     width: 100%;
     background: #FFAB9D;
 }
 
-.btn:hover svg {
+.banner-btn:hover svg {
     transform: translateX(0);
 }
 
-.btn:hover,
-.btn:focus {
+.banner-btn:hover,
+.banner-btn:focus {
     color: #fff;
 }
 
-.btn:active {
+.banner-btn:active {
     color: #fff;
     transform: scale(0.96);
 }

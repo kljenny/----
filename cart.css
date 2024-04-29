@@ -1,5 +1,5 @@
 /* 標題 */
-.art-title-container {
+.cart-title-container {
     width: 80%;
     max-width: 1200px;
     margin: auto;
@@ -86,4 +86,370 @@
 
 .progress-list li.active~li::before {
     background-color: #999;
+}
+
+/* 下單區 */
+.cart-product-section {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.cart-product {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #C4C4C4; */
+
+    /* @media ( width <= 1200px ) {
+        align-items: start;
+        
+    }
+    @media ( width <= 768px ) {
+        align-items: center;
+    } */
+}
+
+.addmem {
+    padding: 10px 5px;
+    background-color: #F8F8F8;
+    font-size: 14px;
+
+    button {
+        margin-left: 20px;
+        background-color: #C9C6B3;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+}
+
+.check-top {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item {
+    width: 100%;
+    border-top: 1px solid #C4C4C4;
+    background-color: #fff;
+    padding: 10px 0;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    /* background-color: #faa; */
+
+    /* @media ( width <= 1200px ) {
+            width: 97%;
+        }
+        @media ( width <= 768px ) {
+            width: 85%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        @media ( width <= 450px ) {
+            width: 100%;
+        } */
+
+    .item-img {
+        width: 20%;
+        margin-left: 30px;
+
+
+        /* @media ( width <= 768px ) {
+                width: 40%;
+                margin-left: 0px;
+            } */
+    }
+
+    .item-img img {
+        width: 100%;
+        border-radius: 5px;
+        vertical-align: middle;
+    }
+
+
+    .cart-detail {
+        width: 45%;
+        height: 100%;
+        margin-left: 40px;
+        font-size: 20px;
+        line-height: 50px;
+
+        /* @media ( width <= 1200px ) {
+                width: 50%;
+                margin-left: 30px;
+                font-size: clamp( 16px, 1.666vw, 20px ); */
+        /* background-color: #aaa; */
+        /* } */
+        /* @media ( width <= 768px ) {
+                margin-left: 15px;
+                line-height: 25px;
+            } */
+
+
+    }
+
+    .text {
+        margin: 10px 0 0 0px;
+        /* background-color: #faa; */
+
+        /* @media ( width <= 768px ) {
+                margin: auto;
+            } */
+
+    }
+
+    .text a {
+        color: #2B2B2B;
+        text-decoration-color: #f000;
+        transition: .5s;
+    }
+
+    .text a:hover {
+        /* text-decoration-color: #aaa ; */
+    }
+
+    .cart-btn {
+        width: 100%;
+        height: 20%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #faa; */
+
+
+        /* @media ( width <= 768px ) {
+                margin: 15px 0;
+            } */
+    }
+}
+
+.btn-trash a {
+    color: #2B2B2B;
+}
+
+.cart-coupon {
+    border: 1px solid #C4C4C4;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.cart-coupon p {
+    padding: 6px 0;
+}
+
+.cart-coupon span {
+    background-color: #999;
+    color: #fff;
+    padding: 4px;
+    margin-right: 7px;
+}
+
+
+/* 取貨資料 結帳*/
+
+.order-section {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    padding: 10% 0;
+    font-family: 'NotoSerif-DisplayRegular';
+}
+
+.order-container {
+    width: 50%;
+
+}
+
+.order-delivery h4 {
+    background-color: #F4F3EF;
+}
+
+/*日曆*/
+.calendar-wrapper {
+    max-width: 280px;
+    font: 100% system-ui;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.first-day {
+    grid-column-start: 3;
+}
+
+
+.day-name {
+    background: #eee;
+}
+
+.calendar-wrapper h1 {
+    text-align: center;
+}
+
+.calendar-wrapper ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.calendar-wrapper li {
+    padding: 2px;
+}
+
+.calendar-container select {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.calendar-wrapper {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+
+.buy-info h4 {
+    background-color: #C9C6B3;
+}
+
+/* 商品總計 */
+.calculation {
+    width: 100%;
+    height: 35%;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    border: 1px solid #C4C4C4;
+    top: 150px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* justify-content: center; */
+
+    @media (width <=1200px) {
+        margin: auto;
+    }
+
+    @media (width <=768px) {
+        width: 90%;
+        height: 100%;
+        margin: 50px auto 20px;
+        border: none;
+    }
+
+    .calculate {
+        width: 100%;
+        margin: 5% 0 0 0;
+        /* margin-top: 90px; */
+        /* margin-bottom: 80px; */
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+
+        /* background-color: #aaf; */
+
+        @media (width <=1200px) {
+            font-size: clamp(16px, 1.5vw, 18px);
+        }
+
+        @media (width <=768px) {
+            width: 90%;
+            margin: auto;
+        }
+
+        @media (width <=450px) {
+            width: 100%;
+            margin: auto;
+        }
+
+
+
+
+
+        .card {
+            padding: 0px 35px 0px 35px;
+            margin: 0 10px 50px 10px;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: #faf; */
+
+            @media (width <=768px) {
+                margin: 0 10px 30px 10px;
+            }
+        }
+
+        .card:last-child {
+            border-top: 1px solid #aaa;
+            padding-top: 50px;
+            margin-bottom: 50px;
+            /* background-color: #faa; */
+
+            @media (width <=768px) {
+                padding-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+
+}
+
+.to-pay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #faa; */
+
+}
+
+.pay-way {
+    width: 90%;
+    margin: 30px 0 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #aaa; */
+
+    @media (width <=768px) {
+        /* width: 50%; */
+    }
+
+}
+
+.pay-way span {
+
+    @media (width <=768px) {
+        font-size: clamp(14px, 1.333vw, 16px);
+    }
+
+}
+
+.pay-way img {
+    width: 30px;
+    margin-left: 5px;
+
+
+    @media (width <=768px) {
+        width: 30px;
+    }
 }

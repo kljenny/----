@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聯絡我們</title>
+    <title>Aitai Flower</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="contact-us.css">
+    <link rel="stylesheet" href="index01.css">
     <link rel="stylesheet" href="login01.css">
 
     <!-- 導覽列icon -->
-    <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
     </style>
+
 </head>
 
 <body>
@@ -47,6 +49,8 @@
                 <span></span>
             </label>
         </div>
+    </header>
+    <!-- <div class="banners"></div> -->
     </header>
 
     <!-- 會員登入、註冊 -->
@@ -134,51 +138,59 @@
         </div>
     </div>
 
-
-    <!-- 表單 -->
-    <div class="contact-section">
-        <div class="contact-container">
-            <div class="contact-content">
-                <div class="left-side">
-                    <div class="address details">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div class="topic">Address</div>
-                        <div class="text-one">桃園市中壢區復興路46號9樓</div>
-                    </div>
-                    <div class="phone details">
-                        <i class="fa-solid fa-phone"></i>
-                        <div class="topic">Phone</div>
-                        <div class="text-one">Tel : (03)425-1108</div>
-                    </div>
-                    <div class="email details">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div class="topic">E-mail</div>
-                        <div class="text-one">Aitai Flower_Studio<br>@gmail.com</div>
-                    </div>
-                </div>
-                <div class="right-side">
-                    <div class="topic-text">聯絡表單</div>
-                    <p>如果您有任何需求或意見，將可以透過以下聯繫管道及聯絡表單傳達您的需求，我們會盡快回復您。</p>
-
-                    <form action="#">
-                        <div class="input-box">
-                            <input type="text" placeholder="您的姓名:">
-                        </div>
-                        <div class="input-box">
-                            <input type="text" placeholder="您的信箱:">
-                        </div>
-                        <div class="input-box message-box">
-                            <textarea placeholder="需求說明:"></textarea>
-                        </div>
-                        <div class="contact-button">
-                            <input type="button" value="確認後送出">
-                        </div>
-                    </form>
+    <!-- banner視覺圖 -->
+    <section class="banner">
+        <div class="banner-container">
+            <img src="/img/banner.jpg" alt="banner">
+            <div class="banner-slogan">
+                <p>生活ㆍ要有點不一樣</p>
+                <p>Aitai Flower Shop</p>
+                <a class="banner-btn" href="product-list.html">
+                    <span>熱銷商品</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 簡介 -->
+    <div class="intro">
+        <div class="intro-container">
+            <div class="intro-card">
+                <div class="intro-title">Aitai Flower Shop</div>
+                <div class="intro-content">在日語中，「aitai（会いたい）」意味著「想見你」，將這份情感具象化傳達給您所思念的人。我們致力於通過花朵的美麗和力量，讓每一刻都充滿愛和溫馨。
                 </div>
             </div>
+            <div class="intro-img1"><img src="img\22904494 1.svg" alt="img"></div>
+            <div class="intro-img2"><img src="img\22904494 9.svg" alt="img"></div>
+            <div class="intro-img3"><img src="img\22904494 3.svg" alt="img"></div>
         </div>
     </div>
 
+    <div class="news-slider">
+        <div class="news-container">
+            <!-- <div class="news-title">最新消息</div> -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-info">2024/4/30手作課程</div><img src="/img/news01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-info">2024/5/12母親節感謝季</div><img src="/img/news02.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-info">2024/6/30歡送畢業季</div><img src="/img/news03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
     <section>
@@ -208,6 +220,26 @@
         </footer>
     </section>
     <script src="/js/script.js"></script>
+    <script src="/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>

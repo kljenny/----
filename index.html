@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="login01.css">
 
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
@@ -25,18 +25,15 @@
 <body>
     <!-- 導覽列 -->
     <header class="main-header">
+        <input type="checkbox" name="" id="menu-switch">
         <div class="nav-container">
-            <nav class="nav-left">
-                <a href="news.html">最新活動</a>
-                <a href="product-list.html">商品導覽</a>
-                <!-- <a href="#">花藝空間</a> -->
-
-            </nav>
-            <a class="nav-logo" href="#">
+            <a class="nav-logo" href="index.html">
                 <img src="/img/logo.svg" alt="logo">
             </a>
-            <nav class="nav-right">
-                <a href="#">關於我們</a>
+            <nav class="main-nav">
+                <a href="news.html">最新活動</a>
+                <a href="product-list.html">商品導覽</a>
+                <a href="about-us.html">關於我們</a>
                 <a href="contact-us.html">連絡我們</a>
             </nav>
             <nav class="nav-icon">
@@ -44,11 +41,104 @@
                     <input type="search" placeholder="請輸入關鍵字">
                     <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
                 </form>
-                <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>
-                <i class="fa-solid fa-user"><a href="login.html"></a></i>
+                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
+                <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
             </nav>
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
     </header>
+    <!-- <div class="banners"></div> -->
+    </header>
+
+    <!-- 會員登入、註冊 -->
+    <div class="wrapper">
+        <span class="icon-close">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </span>
+        <!-- 登入 -->
+        <div class="form-box-login">
+            <h2>會員登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" placeholder="Email">
+                    <label>帳號</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password">
+                    <label>密碼</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">記住帳號
+                    </label>
+                    <a href="#">忘記密碼?</a>
+                </div>
+                <button type="submit" class="btn">登入</button>
+                <div class="login-register">
+                    <p>還沒有帳號嗎?<a href="#" class="register-link">立即註冊</a></p>
+                </div>
+                <div class="other-login-way">
+                    <h4>其他登入方式</h4>
+                    <div class="social-web">
+                        <a href="#"><img src="/img/google.png" alt="icon_google"></a>
+                        <a href="#"><img src="/img/facebook.png" alt="icon_FB"></a>
+                        <a href="#"><img src="/img/line.png" alt="icon_line"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 註冊 -->
+        <div class="form-box-register">
+            <h2>會員註冊</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"> <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="username">
+                    <label>使用者名稱</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" placeholder="Email">
+                    <label>帳號</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password">
+                    <label>密碼</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">我同意網站服務條款
+                    </label>
+                </div>
+                <button type="submit" class="btn">註冊</button>
+                <div class="login-register">
+                    <p>已經有帳號了?<a href="#" class="login-link">登入</a></p>
+                </div>
+                <div class="other-login-way">
+                    <h4>其他註冊方式</h4>
+                    <div class="social-web">
+                        <a href="#"><img src="/img/google.png" alt="icon_google"></a>
+                        <a href="#"><img src="/img/facebook.png" alt="icon_FB"></a>
+                        <a href="#"><img src="/img/line.png" alt="icon_line"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- banner視覺圖 -->
     <section class="banner">
         <div class="banner-container">
@@ -56,7 +146,7 @@
             <div class="banner-slogan">
                 <p>生活ㆍ要有點不一樣</p>
                 <p>Aitai Flower Shop</p>
-                <a class="btn" href="javascript: void(0)">
+                <a class="banner-btn" href="product-list.html">
                     <span>熱銷商品</span>
                     <svg width="13px" height="10px" viewBox="0 0 13 10">
                         <path d="M1,5 L11,5"></path>
@@ -238,7 +328,7 @@
                 </div>
         </footer>
     </section>
-
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
