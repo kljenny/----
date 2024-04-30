@@ -196,12 +196,12 @@
     width: 100%;
     display: flex;
     position: relative;
-    /* background-color: #D2E3D9; */
 }
 
 .slider img {
     width: 100%;
 }
+
 
 .slider-news {
     position: absolute;
@@ -220,19 +220,23 @@
     position: absolute;
 }
 
-.news-title {
-    /* color: #5c5757;
-    text-align: center;
-    align-content: center;
-    font-size: 2em;
-    font-weight: 700;
-    border-right: 1px solid #5c5757;
-    padding-right: 20px; 
-    width: 3%;
-    height: 15%; */
-    /* text-decoration-thickness: 10px; */
-    /* position: relative; */
+.news-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5% 0;
+}
 
+.news-container {
+    width: 52%;
+    transform: rotate(5deg);
+    border-radius: 50%;
+    height: 300px;
+    background-color: #FFAB9D;
+}
+
+.news-title {
     color: #5c5757;
     text-align: center;
     /* align-content: center; */
@@ -246,9 +250,6 @@
     left: 0;
     margin: 10%;
     padding-bottom: 10px;
-
-
-
 }
 
 .slider-news p {
@@ -260,6 +261,7 @@
     line-height: 2.3em;
     color: rgba(115, 115, 115, 0.30);
 }
+
 
 /*服務項目 --------------------*/
 .silder-service {

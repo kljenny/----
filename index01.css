@@ -202,8 +202,6 @@
 
 .news-container {
     width: 52%;
-    transform: rotate(5deg);
-    border-radius: 50%;
     height: 300px;
     background-color: #FFAB9D;
 }
@@ -213,7 +211,7 @@
     width: 90%;
     height: 100%;
     border-radius: 50%;
-    transform: rotate(-4.5deg);
+
 }
 
 .swiper-slide .slide-info {
@@ -240,4 +238,100 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
     color: black;
+}
+
+/* 熱賣商品==================*/
+.silder-bestseller {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    align-content: center;
+    background: #c9c6b3;
+    border-radius: 0px 0px 0px 400px;
+    display: flex;
+}
+
+.bestseller-box {
+    top: 48px;
+    right: 0;
+    position: absolute;
+    width: 800px;
+    height: 220px;
+    border: 2px solid rgba(145, 123, 90, 1);
+
+}
+
+.bestseller-card-list {
+    right: -30px;
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+}
+
+.bestseller-card {
+    width: 80%;
+    height: 45%;
+    padding-top: 120px;
+    /* position: relative; */
+    justify-self: flex-end;
+
+}
+
+.bestseller-title {
+    color: #5c5757;
+    text-align: center;
+    align-content: center;
+    font-size: 2em;
+    font-weight: 500;
+    /* text-decoration-thickness: 10px; */
+    /* position: relative; */
+    width: 5%;
+    height: 40%;
+    margin: 6% 10% 0 10%;
+}
+
+.bestseller-card img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* choice */
+.choice-wrap {
+    width: 1200px;
+    margin: auto;
+}
+
+.choice-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    background-color: antiquewhite;
+}
+
+.choice-item .choice-pic {
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.choice-item .choice-pic img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.choice-item .choice-txt {
+    width: 55%;
+    background-color: #c9c6b3;
+    flex-shrink: 0;
+    padding-left: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.choice-item>:first-child {
+    margin-right: -10%;
 }

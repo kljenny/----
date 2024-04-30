@@ -12,9 +12,8 @@
 
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
-    <!-- CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
@@ -173,9 +172,10 @@
     <section class="slider">
         <img src="img\bgc.svg" alt="slider-img">
         <!-- 最新活動 -->
-        <div class="slider-news">
-            <div class="news-title">最新消息</div>
-            <img src="/img/news01.jpg" alt="news img">
+        <div class="news-slider">
+            <div class="news-container">
+                <div class="news-title">最新消息</div>
+            </div>
         </div>
         <!-- 服務項目 -->
         <div class="silder-service">
@@ -234,7 +234,7 @@
                 </svg>
             </a>
         </div>
-        </div>
+
     </section>
     <!-- 選擇我們的理由 -->
     <section class="choice">
@@ -329,6 +329,25 @@
         </footer>
     </section>
     <script src="/js/script.js"></script>
+    <script src="/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

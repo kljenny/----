@@ -20,7 +20,8 @@
     align-items: center;
     height: 75px;
     width: 100%;
-    background-color: rgba(85, 85, 85, 0.1);
+    background-color: rgba(246, 246, 246, 1);
+    box-shadow: #6F7170;
 }
 
 @media screen and (max-width: 767px) {
