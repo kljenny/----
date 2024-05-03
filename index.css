@@ -1,806 +1,395 @@
-/* 視覺圖---------------------------- */
-.banner-container {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+html {
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
 }
 
-.banner-container img {
-    width: 95%;
-    height: auto;
+section {
+    padding: 2rem 9%;
 }
 
-.banner-slogan {
-    position: absolute;
-    top: 30%;
-    right: 90px;
-    text-align: right;
-}
-
-.banner-slogan p:first-child {
-    color: white;
-    font-size: 4vw;
-    letter-spacing: 0.2em;
-    font-family: 'Oooh Baby', 'Noto Serif TC', serif;
-    text-align: right;
-}
-
-.banner-slogan p {
-    color: white;
-    font-size: 3vw;
-    font-family: 'Oooh Baby', 'Noto Serif TC', serif;
-}
-
-/* 視覺圖上的按鈕 */
-.banner-btn {
-    position: absolute;
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
+.heading {
     text-align: center;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    padding: 15px 20px;
-    margin-top: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    right: 30px;
+    font-size: 3.5rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: #fec2ca65;
 }
 
-.banner-btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: rgba(255, 171, 157, 0.5);
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;
+.heading span {
+    color: #E79686;
 }
 
-.banner-btn span {
-    position: relative;
-    z-index: 1;
-
-}
-
-.banner-btn svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #ffffff;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-
-.banner-btn:hover:before {
-    width: 100%;
-    background: #FFAB9D;
-}
-
-.banner-btn:hover svg {
-    transform: translateX(0);
-}
-
-.banner-btn:hover,
-.banner-btn:focus {
-    color: #fff;
-}
-
-.banner-btn:active {
-    color: #fff;
-    transform: scale(0.96);
-}
-
-/* 簡介 -------------------*/
-.intro {
-    display: flex;
-    justify-content: center;
-}
-
-.intro-container {
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
-    position: relative;
-
-}
-
-.intro-card {
-    position: relative;
-    margin: 200px 0;
-    height: 250px;
-    background-color: rgba(234, 234, 234, 0.7);
-    border-radius: 30px;
-
-}
-
-.intro-title,
-.intro-content {
-    text-align: center;
-    /* 字元間距 */
-    letter-spacing: 0.1em;
-    padding: 20px 0;
-}
-
-.intro-title {
-    font-size: 30px;
-}
-
-.intro-content {
-    font-size: 18px;
-    padding: 0 300px;
-
-}
-
-.intro-img1 {
-    width: 20%;
-    height: 20%;
-    position: absolute;
-    transform: rotate(10deg) scale(1, 1);
-    overflow: hidden;
-    top: 80px;
-    left: 800px;
-
-}
-
-.intro-img1 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.intro-img2 {
-    width: 200px;
-    height: 203px;
-    position: absolute;
-    transform: rotate(10deg) scale(1, 1);
-    overflow: hidden;
-    bottom: 200px;
-}
-
-.intro-img2 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.intro-img3 {
-    width: 200px;
-    height: 203px;
-    position: absolute;
-    overflow: hidden;
-    left: 800px;
-    bottom: 100px;
-}
-
-.intro-img3 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-/* 輪播圖區----------------------- */
-/* 最新消息 */
-.slider {
-    width: 100%;
-    display: flex;
-    position: relative;
-}
-
-.slider img {
-    width: 100%;
-}
-
-
-.slider-news {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    top: 80px;
-    justify-content: center;
-}
-
-.slider-news img {
-    width: 40%;
-    align-self: center;
-    border-radius: 50%;
-    top: 50px;
-    position: absolute;
-}
-
-.news-slider {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 5% 0;
-}
-
-.news-container {
-    width: 52%;
-    transform: rotate(5deg);
-    border-radius: 50%;
-    height: 300px;
-    background-color: #FFAB9D;
-}
-
-.news-title {
-    color: #5c5757;
-    text-align: center;
-    /* align-content: center; */
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    border-bottom: 1px solid #5c5757;
-    /* text-decoration-thickness: 10px; */
-    position: absolute;
-    width: 15%;
-    left: 0;
-    margin: 10%;
-    padding-bottom: 10px;
-}
-
-.slider-news p {
+.index-btn {
     display: inline-block;
-    width: 70%;
-    text-align: center;
-    word-spacing: 5px;
-    font-size: 25x;
-    line-height: 2.3em;
-    color: rgba(115, 115, 115, 0.30);
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
-
-/*服務項目 --------------------*/
-.silder-service {
-    /* width: 90%; */
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0px 50px 50px 0px;
-    height: 30%;
-    position: absolute;
-    top: 35%;
-    /* 彈性列空間 */
-    align-content: center;
-    display: flex;
-    z-index: 2;
+.index-btn:hover {
+    background: #E79686;
 }
 
-.service-title {
-    color: #5c5757;
-    text-align: center;
-    align-content: center;
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    border-bottom: 1px solid #5c5757;
-    /* text-decoration-thickness: 10px; */
-    /* position: relative; */
-    /* width: 15%; */
-    height: 15%;
-    margin: 5% 0 0 5%;
-
-}
-
-/* card 2 */
-.service-card2 {
-    width: 25%;
-    height: 58.33%;
-    position: absolute;
-    display: flex;
-    left: 280px;
-    bottom: 90px;
-}
-
-.service-card2 img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 60px 0px 60px 0px;
-}
-
-.service-card2 p {
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    /* 彈性列空間 */
-    align-content: center;
-    /* flex子物件 */
-    align-self: flex-end;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.67);
-    border-radius: 0px 0px 60px 0px;
-    overflow: hidden;
-    font-size: 18px;
-}
-
-.service-card2:hover img {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    border-radius: 4px;
-    bottom: 0;
-    transition-duration: .3s;
-    z-index: 1;
-}
-
-.service-card2:hover p {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.67);
-    border-radius: 4px;
-    transition-duration: .3s;
-    font-weight: 600;
-    font-size: 25px;
-    z-index: 1;
-}
-
-/* card 3 */
-.service-card3 {
-    width: 25%;
-    height: 58.33%;
-    position: absolute;
-    display: flex;
-    left: 850px;
-    bottom: 140px;
-}
-
-.service-card3 img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 60px 0px 60px 0px;
-}
-
-.service-card3 p {
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    /* 彈性列空間 */
-    align-content: center;
-    /* flex子物件 */
-    align-self: flex-end;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.67);
-    border-radius: 0px 0px 60px 0px;
-    overflow: hidden;
-    font-size: 18px;
-}
-
-.service-card3:hover img {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    border-radius: 4px;
-    bottom: 0;
-    transition-duration: .3s;
-    z-index: 1;
-}
-
-.service-card3:hover p {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.67);
-    border-radius: 4px;
-    transition-duration: .3s;
-    font-weight: 600;
-    font-size: 25px;
-    z-index: 1;
-}
-
-/* card 1 */
-.service-card1 {
-    width: 25%;
-    height: 58.33%;
-    position: absolute;
-    display: flex;
-    left: 550px;
-    bottom: 10px;
-
-}
-
-.service-card1 img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 60px 0px 60px 0px;
-}
-
-.service-card1 p {
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    /* 彈性列空間 */
-    align-content: center;
-    /* flex子物件 */
-    align-self: flex-end;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.67);
-    border-radius: 0px 0px 60px 0px;
-    overflow: hidden;
-    font-size: 18px;
-}
-
-.service-card1:hover img {
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    border-radius: 4px;
-    bottom: 0;
-    transition-duration: .3s;
-}
-
-.service-card1:hover p {
-    width: 120%;
-    height: 120%;
-    position: absolute;
-    text-align: center;
-    background: rgba(196, 196, 196, 0.67);
-    border-radius: 4px;
-    transition-duration: .3s;
-    font-weight: 600;
-    font-size: 25px;
-}
-
-/* 服務項目的按鈕 */
-.service-btn {
-    position: absolute;
-    color: #090909;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    padding: 15px 20px;
-    margin-top: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    bottom: 10px;
-    left: 80%;
-}
-
-.service-btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background: rgba(201, 198, 179, 1);
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;
-}
-
-.service-btn span {
-    position: relative;
-    z-index: 1;
-}
-
-.service-btn svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #090909;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-
-.service-btn:hover:before {
-    width: 100%;
-    background: rgba(201, 198, 179, 1);
-}
-
-.service-btn:hover svg {
-    transform: translateX(0);
-}
-
-.service-btn:hover,
-.service-btn:focus {
-    color: #090909;
-}
-
-.service-btn:active {
-    color: #090909;
-    transform: scale(0.96);
-}
-
-/* 熱賣商品-------------------- */
-.silder-bestseller {
-    right: 0;
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
-    /* width: 86%;
-    height: 40%; */
-    position: absolute;
-    top: 70%;
-    /* 彈性列空間 */
-    align-content: center;
-    background: #c9c6b3;
-    border-radius: 0px 0px 0px 400px;
-    display: flex;
-}
-
-.bestseller-box {
-    position: absolute;
-    width: 800px;
-    height: 220px;
-    border: 2px solid rgba(145, 123, 90, 1);
-    right: 0;
-    top: 60px;
-
-}
-
-.bestseller-card-list {
-    right: -30px;
-    justify-content: flex-end;
-    flex-direction: row;
-    display: flex;
-    gap: 10px;
-    z-index: 1;
-}
-
-.bestseller-card {
-    width: 80%;
-    height: 45%;
-    padding-top: 120px;
-    /* position: relative; */
-    justify-self: flex-end;
-
-}
-
-.bestseller-title {
-    color: #5c5757;
-    text-align: center;
-    align-content: center;
-    font-size: 2em;
-    font-weight: 500;
-    /* text-decoration-thickness: 10px; */
-    /* position: relative; */
-    width: 5%;
-    height: 40%;
-    margin: 6% 10% 0 10%;
-}
-
-.bestseller-card img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.bestseller-card p {
-    font-size: 20px;
-    padding-top: 4px;
-    font-family: Georgia, serif;
-}
-
-.bestseller-btn {
-    position: absolute;
-    color: #090909;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    padding: 15px 20px;
-    margin-top: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    bottom: 10px;
-    left: 80%;
-}
-
-.bestseller-btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 28px;
-    background:
-        rgba(210, 226, 216, 1);
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;
-}
-
-.bestseller-btn span {
-    position: relative;
-    z-index: 1;
-}
-
-.bestseller-btn svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #090909;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-
-.bestseller-btn:hover:before {
-    width: 100%;
-    background: rgba(210, 226, 216, 1);
-}
-
-.bestseller-btn:hover svg {
-    transform: translateX(0);
-}
-
-.bestseller-btn:hover,
-.bestseller-btn:focus {
-    color: #090909;
-}
-
-.bestseller-btn:active {
-    color: #090909;
-    transform: scale(0.96);
-}
-
-/* 選擇我們----------------------- */
-
-.choice {
-    width: 80%;
-    max-width: 1200px;
-    margin: auto;
-    position: relative;
-    margin-top: 50px;
-    /* height: 600px;
-    overflow-y: scroll; */
-}
-
-.choice-head {
+.banner-section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/banner01.jpg);
 }
 
-.choice-head img {
-    z-index: -1;
+.banner-content {
+    max-width: 50rem;
 }
 
-.choice-title {
-    position: absolute;
-    color: #5c5757;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-    font-size: 1.5em;
-    font-weight: 500;
-    /* text-decoration-thickness: 10px; */
-    /* position: relative; */
-    width: 2%;
-    height: 40%;
+.banner-content h3 {
+    font-size: 6rem;
+    font-family: 'NotoSerif-DisplayRegular', sans-serif;
+    color: #fff;
 }
 
-.choice-card-list {
-    background-image: url(/img/choice-bgc.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 80%;
-    width: 100%;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-
+.banner-content span {
+    font-size: 3.5rem;
+    color: #E79686;
+    padding: 1rem 0;
+    line-height: 1.5;
 }
 
-.choice-card {
+.banner-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* 最新活動 */
+
+.news-section .row {
     display: flex;
-    padding: 20px;
     align-items: center;
-    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.news-section .row .video-container {
     position: relative;
+    flex: 1 1 40rem;
+}
+
+.news-section .row .video-container video {
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-section .row .video-container h3 {
+    position: absolute;
+    top: 50%;
+    font-weight: 1000;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #ffffffe4;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.news-section .row .news-content {
+    flex: 1 1 40rem;
+    padding-left: 40px;
+    display: flex;
     flex-direction: column;
 }
 
-.choice-head img {
-    width: 30%;
-    height: 30%;
+.news-section .row .news-content h3 {
+    font-size: 3rem;
+    color: #333;
 }
 
-.choice-card-img img {
-    border-radius: 0px 70px 70px 0px;
-    position: absolute;
-    width: 399.75px;
-    height: 195px;
-    position: relative;
-}
-
-.choice-txt {
-    background-color: #fff;
-    border-radius: 30px;
-    width: 400px;
-    height: 90px;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    padding: 30px;
-    left: 20px;
-    position: absolute;
-}
-
-.choice-card:nth-child(1) .choice-txt,
-.choice-card:nth-child(3) .choice-txt,
-.choice-card:nth-child(5) .choice-txt {
-    background-color: #F8FAE5;
-    border-radius: 30px;
-    width: 400px;
-    height: 90px;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    padding: 30px;
-    left: 300px;
-    position: absolute;
-
-}
-
-.choice-card:nth-child(2) .choice-txt,
-.choice-card:nth-child(4) .choice-txt {
-    background-color: #F8FAE5;
-    border-radius: 30px;
-    width: 400px;
-    height: 90px;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    padding: 30px;
-    left: 300px;
-    position: absolute;
-}
-
-.choice-card:nth-child(1) .card-left,
-.choice-card:nth-child(3) .card-left,
-.choice-card:nth-child(5) .card-left {
+.item-list {
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    counter-reset: num;
+    /* padding: 1rem; */
+}
+
+.item {
+    width: 420px;
+    padding: 14px 0 0 0px;
+    margin: 7px;
     position: relative;
+    padding-left: 40px;
+}
+
+.item a {
+    color: #666;
+    text-decoration: none;
+}
+
+.item::before {
+    content: '1';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 52px;
+    counter-increment: num;
+    content: counter(num);
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    right: 0;
+    left: 40px;
+    bottom: -10px;
+    border-bottom: 2px dashed #E79686;
+}
+
+.item:nth-child(1) {
+    order: 1;
+}
+
+.item:nth-child(2) {
+    order: 2;
+}
+
+.item:nth-child(3) {
+    order: 3;
+}
+
+.item:nth-child(4) {
+    order: 4;
+}
+
+.news-content-btn {
+    width: 12%;
+    align-self: flex-end;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    background-color: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.news-content-btn :hover {
+    background-color: #E79686;
+}
+
+.icons-container {
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons {
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 15rem;
+}
+
+.icons-container .icons img {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3 {
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span {
+    color: #555;
+    font-size: 1.3rem;
+}
+
+/* 熱賣商品 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 13%;
-    width: auto;
 }
 
-.choice-card:nth-child(2) .card-right,
-.choice-card:nth-child(4) .card-right {
+.swiper-slide img {
+    display: block;
+    border-radius: 3%;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+/* 選擇我們的理由 */
+.choice-wrap {
+    /* width: 1200px; */
+    margin: auto;
+    margin-top: 5%;
     display: flex;
-    position: relative;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-right: 15%;
-    width: auto;
+    background-image: url(/img/choice-bgc.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 75%;
+}
+
+.choice-item {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.choice-item h2 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+
+}
+
+.choice-item p {
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+
+}
+
+.choice-item .choice-pic {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.choice-item .choice-pic img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.choice-item .choice-txt {
+    width: 50%;
+    background-color: #c9c6b3;
+    flex-shrink: 0;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.choice-item>:first-child {
+    margin-right: -10%;
+}
+
+.choice-item:nth-child(1) .choice-txt {
+    background-color: #50595c86;
+    color: #dfdfdf;
+}
+
+.choice-item:nth-child(2) .choice-txt {
+    background-color: #ffd8d894;
+}
+
+.choice-item:nth-child(3) .choice-txt {
+    background-color: #50595c86;
+    color: #dfdfdf;
+}
+
+.choice-item:nth-child(4) .choice-txt {
+    background-color: #ffd8d894;
+}
+
+@media (max-width:991px) {
+    section {
+        padding: 2rem;
+    }
+
+    .banner-section {
+        background-position: left;
+    }
+
+    .banner-content h3 {
+        font-size: 5rem;
+    }
+
+    .banner-content span {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .item::after {
+        width: 90%;
+
+    }
+}
+
+@media (max-width:568px) {
+    .item::after {
+        width: 85%;
+
+    }
+
+    .news-content-btn {
+        width: 11%;
+    }
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .news-section .row .news-content {
+        padding-left: 0;
+        width: 10%;
+    }
+
+    .item::after {
+        width: 80%;
+    }
+
+    .news-content-btn {
+        width: 11%;
+        margin-right: 70px;
+    }
+
 }

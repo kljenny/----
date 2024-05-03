@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
 
 .nav-container {
@@ -20,8 +19,8 @@
     align-items: center;
     height: 75px;
     width: 100%;
-    background-color: rgba(246, 246, 246, 1);
-    box-shadow: #6F7170;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px #645a5a;
 }
 
 @media screen and (max-width: 767px) {
@@ -83,8 +82,14 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #2B2B2B;
+    color: #0c0c0c;
+    font-size: 18px;
 }
+
+.nav-container .main-nav a:hover {
+    color: #000000;
+}
+
 
 @media screen and (max-width: 767px) {
     .nav-container .main-nav a {
@@ -119,7 +124,7 @@
     display: flex;
     align-items: center;
     border-radius: 100px;
-    border: #fff 1px solid;
+    border: #131313 1px solid;
     padding: 5px 10px;
 }
 
@@ -168,9 +173,15 @@
     margin-right: 10px;
 }
 
+.nav-icon i:hover {
+    color: #E79686;
+    margin-right: 10px;
+}
 
 .btnLogin-popup {
     border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .banners {
@@ -190,68 +201,60 @@
 
 /* footer------------------------------------- */
 
-footer {
-    width: 100%;
-    display: block;
-    justify-content: center;
-    position: relative;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    /* left: 0; */
-    font-family: 'Nunito Sans', 'Noto Serif TC', sans-serif;
-    font-weight: 400;
-    background-color: rgba(85, 85, 85, 0.1);
-    background-size: cover;
-    font-family: Georgia, serif;
-
+.footer-section {
+    background-color: #E79686;
+    color: #fff;
 }
-
 
 .footer-container {
-    position: relative;
-    padding: 80px;
-    color: #2B2B2B;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-container>span {
-    top: 0;
-    left: 0;
-    width: 400px;
     text-align: center;
-    justify-content: center;
-    font-family: 'NotoSerif-DisplayRegular', sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-}
-
-.footer-connection {
-    /* margin: 265px 0 0 0; */
-    position: absolute;
-    top: 20px;
-    left: 400px;
-    line-height: 30px;
     display: flex;
-    justify-content: space-between;
-    color: #6F7170;
+    flex-wrap: wrap;
+    gap: 10rem;
+
 }
 
-.footer-service {
+.footer-contact {
+    justify-content: center;
+    align-items: center;
     width: 30%;
-    min-width: 300px;
-    /* margin: 265px 0 0 0; */
-    line-height: 30px;
     display: flex;
-    font-size: 14px;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff2f;
 }
+
+.footer-contact span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.footer-contact img {
+    width: 15%;
+}
+
+.footer-container .footer-box {
+    /* flex: 1 1 25rem; */
+    display: inline-block;
+}
+
+.footer-container .footer-box h3 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.footer-box a {
+    display: block;
+    color: #666;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-family: Georgia, serif;
+}
+
+.footer-box a:hover {
+    color: var(--pink);
+    text-decoration: underline;
+}
+
 
 .to-top a {
     width: 60px;
@@ -309,4 +312,60 @@ footer {
     align-self: center;
     display: flex;
     line-height: 1.5;
+}
+
+.footer-section .credit {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2rem;
+    font-size: 1rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+
+}
+
+.footer-section .credit span {
+    color: var(--pink);
+}
+
+@media (max-width:991px) {
+    .footer-container {
+        gap: 7rem;
+    }
+
+    .footer-contact span {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .footer-container {
+        gap: 1.5rem;
+    }
+
+    .footer-contact span {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:568px) {
+    .footer-container {
+        gap: 1rem;
+    }
+
+    .footer-contact span {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width:450px) {
+    .footer-container {
+        gap: 0.5rem;
+    }
+
+    .footer-contact span {
+        font-size: 14px;
+    }
 }

@@ -12,8 +12,8 @@
 
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
-    <!-- swiper -->
     <link rel="stylesheet" href="/swiper-bundle.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
@@ -38,9 +38,9 @@
             <nav class="nav-icon">
                 <form>
                     <input type="search" placeholder="請輸入關鍵字">
-                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
+                    <button><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
                 </form>
-                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
             </nav>
             <label for="menu-switch" class="hb">
@@ -137,217 +137,199 @@
             </form>
         </div>
     </div>
+    <div class="box">
+    </div>
 
-    <!-- banner視覺圖 -->
-    <section class="banner">
-        <div class="banner-container">
-            <img src="/img/banner.jpg" alt="banner">
-            <div class="banner-slogan">
-                <p>生活ㆍ要有點不一樣</p>
-                <p>Aitai Flower Shop</p>
-                <a class="banner-btn" href="product-list.html">
-                    <span>熱銷商品</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </a>
-            </div>
+    <!-- banner section -->
+    <section class="banner-section" id="banner-section">
+        <div class="banner-content">
+            <h3>Aitai Flower Shop</h3>
+            <span>生活要有點不一樣</span>
+            <p>每一朵花都有它的語言<br>為你的每個重要時刻添彩</p>
+            <a href="#" class="index-btn">shop now</a>
         </div>
     </section>
-    <!-- 簡介 -->
-    <section class="intro">
-        <div class="intro-container">
-            <div class="intro-card">
-                <div class="intro-title">Aitai Flower Shop</div>
-                <div class="intro-content">在日語中，「aitai（会いたい）」意味著「想見你」，將這份情感具象化傳達給您所思念的人。我們致力於通過花朵的美麗和力量，讓每一刻都充滿愛和溫馨。
-                </div>
-            </div>
-            <div class="intro-img1"><img src="img\22904494 1.svg" alt="img"></div>
-            <div class="intro-img2"><img src="img\22904494 9.svg" alt="img"></div>
-            <div class="intro-img3"><img src="img\22904494 3.svg" alt="img"></div>
-        </div>
-    </section>
-    <!-- 輪播圖區 -->
-    <section class="slider">
-        <img src="img\bgc.svg" alt="slider-img">
-        <!-- 最新活動 -->
-        <div class="news-slider">
-            <div class="news-container">
-                <div class="news-title">最新消息</div>
-            </div>
-        </div>
-        <!-- 服務項目 -->
-        <div class="silder-service">
-            <div class="service-title">服務項目</div>
-            <div class="service-card2">
-                <img src="/img/service02.jpg" alt="">
-                <p>代客送花 <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-            <div class="service-card3">
-                <img src="/img/service03.jpg" alt="">
-                <p>各式花禮 <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-            <div class="service-card1">
-                <img src="/img/service01.jpg" alt="">
-                <p>空間花藝設計 <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-            <a class="service-btn" href="javascript: void(0)">
-                <span>了解更多</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-        </div>
-        <!-- 熱門商品 -->
-        <div class="silder-bestseller">
-            <div class="bestseller-title">熱門商品</div>
-            <div class="bestseller-box"></div>
-            <div class="bestseller-card-list">
-                <div class="bestseller-card">
-                    <img src="/img/bestseller01.jpg" alt="">
-                    <p>康乃馨花束</p>
-                    <p>NT:900</p>
-                </div>
-                <div class="bestseller-card">
-                    <img src="/img/bestseller02.jpg" alt="">
-                    <p>週花服務</p>
-                    <p>NT:900</p>
-                </div>
-                <div class="bestseller-card">
-                    <img src="/img/bestseller03.jpg" alt="">
-                    <p>週花服務</p>
-                    <p>NT:900</p>
-                </div>
-                <div class="bestseller-card">
-                    <img src="/img/bestseller04.jpg" alt="">
-                    <p>週花服務</p>
-                    <p>NT:900</p>
-                </div>
-            </div>
-            <a class="bestseller-btn" href="javascript: void(0)">
-                <span>了解更多</span>
-                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-        </div>
+    <!-- news section -->
+    <section class="news-section" id="news-section">
+        <h1 class="heading"><span>最新活動</span>/News</h1>
 
-    </section>
-    <!-- 選擇我們的理由 -->
-    <section class="choice">
-        <div class="choice-head">
-            <div class="choice-title">為什麼要選擇我們</div>
-            <img src="/img/choice.png" alt="choice.png">
-        </div>
-        <div class="choice-card-list">
-            <div class="choice-card" style="align-items: flex-start;">
-                <div class="card-left">
-                    <picture class="choice-card-img">
-                        <img src="/img/choice01.jpg" alt="">
-                    </picture>
-                    <div class="choice-txt">
-                        <h3>品質保證</h3>
-                        <p>我們以最高品質的鮮花為您打造美麗的花束，每一朵花都經過精心挑選，確保為您帶來最完美的花藝體驗。</p>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="video-container">
+                <video src="/img/736312813.046743.mp4" alt="最新活動影片" autoplay muted></video>
+                <h3>JOIN US</h3>
             </div>
-            <div class="choice-card" style="align-items: flex-end;">
-                <div class="card-right">
-                    <picture class="choice-card-img">
-                        <img style="border-radius: 70px 0 0 70px;" src="/img/choice02.jpg" alt="">
-                    </picture>
-                    <div class="choice-txt" style="right:600px">
-                        <h3>獨一無二的作品</h3>
-                        <p>我們店內的花藝設計風格獨樹一幟，為您打造出與眾不同的花藝作品。無論是慶祝節日還是表達感情，我們的作品都將為您帶來豐富的視覺和情感體驗。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="choice-card">
-                <div class="card-left">
-                    <picture class="choice-card-img">
-                        <img src="/img/choice03.jpg" alt="">
-                    </picture>
-                    <div class="choice-txt">
-                        <h3>客製化服務</h3>
-                        <p>我們提供客製化服務，讓您可以根據自己的喜好和需求訂製獨特的花禮。從花材的選擇到設計風格的定制，我們將竭盡全力滿足您的每一個要求，讓您的禮物充滿個性和溫暖。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="choice-card">
-                <div class="card-right">
-                    <picture class="choice-card-img">
-                        <img src="/img/choice04.jpg" alt="">
-                    </picture>
-                    <div class="choice-txt">
-                        <h3>快速配送服務•讓驚喜即刻抵達</h3>
-                        <p>我們以最高品質的鮮花為您打造美麗的花束，每一朵花都經過精心挑選，確保為您帶來最完美
-                            的花藝體驗。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="choice-card">
-                <div class="card-left">
-                    <picture class="choice-card-img">
-                        <img src="/img/choice05.jpg" alt="">
-                    </picture>
-                    <div class="choice-txt">
-                        <h3>專屬優惠•享受更多購物樂趣</h3>
-                        <p>我們定期舉辦各類特惠活動，讓您可以享受到更多的購物樂趣。無論是節日特惠還是限時促銷，我們都將為您提供最優惠的價格和最優質的服務。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <section>
-        <footer>
-            <div class="footer-container">
-                <span>CONTACT US</span>
-
-                <div class="footer-connection">
-                    <div class="footer-service">
-                        <span>服務條款<br>免責聲明<br>隱私權保護</spen>
-                    </div>
-                    <div class="connect">
-                        <div class="connect-info">
-                            <span> 聯絡我們<br> Tel : (03)425-1108<br> Email : Aitai Flower_Studio@gmail.com</span>
+            <div class="news-content">
+                <h3>近期活動</h3>
+                <div class="item-list">
+                    <div class="item">
+                        <div class="hashtag">
+                            <span>花藝手作課程</span>
+                            <span>2024/5/8</span>
                         </div>
+                        <a href="#">親手打造美麗花藝作品。立即報名，讓您的生活充滿花的美好！</a>
                     </div>
-                    <div class="copyright">
-                        <span>
-                            ©AitaiFlower Studio Co. All rights reserved. <br>
-                            本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
-                        </span>
+                    <div class="item">
+                        <div class="hashtag">
+                            <span>慶祝母親節</span>
+                            <span>2024/05/12</pan>
+                        </div>
+                        <a href="#">【特別優惠】所有精心挑選的花束和花藝作品享有特別折扣</a>
                     </div>
-                    <div class="to-top">
-                        <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                    <div class="item">
+                        <div class="hashtag">
+                            <span>歡送畢業生</span>
+                            <span>2024/06/30</span>
+                        </div>
+                        <a href="#">我們為畢業季設計了一系列特別的花束和花藝作品</a>
+                    </div>
+                    <div class="item">
+                        <div class="hashtag">
+                            <span>七夕情人節</span>
+                            <span>2024/8/10</span>
+                        </div>
+                        <a href="#">七夕之夜，星空下相遇，讓花語述說心底的情意。</a>
                     </div>
                 </div>
-        </footer>
+                <a href="#" class="news-content-btn">了解更多</a>
+            </div>
+    </section>
+    <!-- service section  -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <img src="/img/service01.png" alt="">
+            <div class="info">
+                <h3>客製化</h3>
+                <span>盡可能滿足您的需求</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="/img/service02.png" alt="">
+            <div class="info">
+                <h3>折扣活動</h3>
+                <span>回饋寵愛的客戶</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="/img/service03.png" alt="">
+            <div class="info">
+                <h3>包裝服務</h3>
+                <span>提供精緻包裝</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="/img/service04 .png" alt="">
+            <div class="info">
+                <h3>全省配送服務</h3>
+                <span>快速送達目的地</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- hot section  -->
+    <section class="Hot-section">
+        <h1 class="heading"><span>熱賣商品</span>/Hot Selling Products</h1>
+        <div class="swiper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/img/product01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/product02.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/product03.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/product05.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/product06.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/product08.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- choose section  -->
+    <section class="choice-section">
+        <h1 class="heading"><span>選擇我們的理由</span>/Why Choose Us</h1>
+        <div class="choice-wrap">
+            <div class="choice-item">
+                <!-- item1 -->
+                <div class="choice-pic">
+                    <img src="/img/choice01.png" alt="">
+                </div>
+                <div class="choice-txt">
+                    <h2>品質保證</h2>
+                    <p>我們以最高品質的鮮花為您打造美麗的花束，每一朵花都經過精心挑選，確保為您帶來最完美的花藝體驗。</p>
+                </div>
+            </div>
+            <!-- item2 -->
+            <div class="choice-item">
+                <div class="choice-txt">
+                    <h2>客製化服務</h2>
+                    <p>讓您可以根據自己的喜好和需求訂製獨特的花禮。從花材的選擇到設計風格的定制，我們將竭盡全力滿足您的每一個要求，讓您的禮物充滿個性和溫暖</p>
+                </div>
+                <div class="choice-pic">
+                    <img src="/img/choice02.png" alt="">
+                </div>
+            </div>
+            <!-- item3 -->
+            <div class="choice-item">
+                <div class="choice-pic">
+                    <img src="/img/choice03.png" alt="">
+                </div>
+                <div class="choice-txt">
+                    <h2>快速配送服務</h2>
+                    <p>我們的快速配送服務，保證您的花禮能夠及時送達目的地。無論是生日還是節日祝福，為您帶來最溫馨的驚喜。
+                    </p>
+                </div>
+            </div>
+            <!-- item4 -->
+            <div class="choice-item">
+                <div class="choice-txt">
+                    <h2>專屬優惠•享受更多購物樂趣</h2>
+                    <p>我們定期舉辦各類特惠活動，讓您可以享受到更多的購物樂趣。</p>
+                </div>
+                <div class="choice-pic">
+                    <img src="/img/choice04.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <span>CONTACT US</span>
+                <div class="footer-icon">
+                    <a href="#"><img src="/img/instagram.png" alt="icon_google"></a>
+                    <a href="#"><img src="/img/facebook.png" alt="icon_FB"></a>
+                    <a href="#"><img src="/img/line.png" alt="icon_line"></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>網站說明</h3>
+                <a href="#">服務條款</a>
+                <a href="#">免責聲明</a>
+                <a href="#">隱私權保護</a>
+            </div>
+            <div class="footer-box">
+                <h3>聯絡我們</h3>
+                <a href="#">Tel : (03)425-1108</a>
+                <a href="#">Email : Aitai Flower_Studio@gmail.com</a>
+            </div>
+            <div class="to-top">
+                <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="credit">
+            <span>©AitaiFlower Studio Co. All rights reserved. </span>|
+            本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+        </div>
     </section>
     <script src="/js/script.js"></script>
     <script src="/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="/js/index03.js"></script>
+
 </body>
 
 </html>

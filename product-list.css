@@ -1,35 +1,14 @@
 /* 標題 */
-.news-title-container {
+/* .news-title-container {
     width: 80%;
     max-width: 1200px;
     margin: auto;
     display: flex;
     position: relative;
     /* position: relative; */
-    /* flex-wrap: wrap; */
-}
+/* flex-wrap: wrap; */
+/* } */
 
-/* 標題---------------------------- */
-
-/* .news-title {
-    position: absolute;
-    width: 40%;
-    margin: 15px auto;
-    font-size: 3rem;
-    color: #3A3636;
-    background-color: #fde4dea6;
-    top: -70px;
-    left: 90px;
-    border-radius: 10px;
-} */
-
-/* .news-title h2 {
-    width: 100%;
-    color: #3A3636;
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-} */
 .news-title span {
     font-size: 35px;
 }
@@ -45,6 +24,15 @@
     position: absolute;
     left: 0px;
     right: 0px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: #fec2ca65;
 }
 
 /* <!-- 商品總覽側邊選單------------------> */

@@ -12,10 +12,12 @@
 
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
     </style>
+    <script src="./js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                     <input type="search" placeholder="請輸入關鍵字">
                     <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
                 </form>
-                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
+                <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
                 <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
             </nav>
             <label for="menu-switch" class="hb">
@@ -138,16 +140,52 @@
 
 
     <!-- 最新消息標題------------------>
-    <div class="news-title-container">
+    <!-- <div class="news-title-container">
         <div class="news-title">
             <span>最新活動</span>
             <h2>news</h2>
         </div>
-    </div>
-
+    </div> -->
 
     <!-- 最新消息內容-------------------->
-    <section class="news-cards-section">
+    <div class="news-wrap">
+        <div class="news-header">
+            <h2 class="news-title">近期活動與消息</h2>
+            <h3 class="news-subtitle"> news </h3>
+        </div>
+        <div class="timeline">
+            <div class="news-item" data-text="花藝手做課程">
+                <div class="item-content">
+                    <img src="/img/news01.jpg" alt="手作課程">
+                    <h2 class="content-title">2024/04/30</h2>
+                    <p class="content-desc">
+                        學習專業技巧，親手打造美麗花藝作品。立即報名，讓您的生活充滿花的美好！<br><span>課程時間：</span><br>上午10:00~下午4:00<br><span>地點：</span><br>我們的花店<br><span>課程內容：</span></br>花束、插花、花環製作等<br><span>預約報名：</span><br>請致電或在線訪問我們的網站了解更多詳情！
+                    </p>
+                </div>
+            </div>
+            <div class="news-item" data-text="花藝手做課程">
+                <div class="item-content">
+                    <img src="/img/news02.jpg" alt="手作課程">
+                    <h2 class="content-title">2024/04/30</h2>
+                    <p class="content-desc">
+                        學習專業技巧，親手打造美麗花藝作品。立即報名，讓您的生活充滿花的美好！<br><span>課程時間：</span><br>上午10:00~下午4:00<br><span>地點：</span><br>我們的花店<br><span>課程內容：</span></br>花束、插花、花環製作等<br><span>預約報名：</span><br>請致電或在線訪問我們的網站了解更多詳情！
+                    </p>
+                </div>
+            </div>
+            <div class="news-item" data-text="花藝手做課程">
+                <div class="item-content">
+                    <img src="/img/news03.jpg" alt="手作課程">
+                    <h2 class="content-title">2024/04/30</h2>
+                    <p class="content-desc">
+                        學習專業技巧，親手打造美麗花藝作品。立即報名，讓您的生活充滿花的美好！<br><span>課程時間：</span><br>上午10:00~下午4:00<br><span>地點：</span><br>我們的花店<br><span>課程內容：</span></br>花束、插花、花環製作等<br><span>預約報名：</span><br>請致電或在線訪問我們的網站了解更多詳情！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最新消息內容-------------------->
+    <!-- <section class="news-cards-section">
         <div class="news-container">
             <div class="news-card">
                 <div class="news-card-pic">
@@ -194,7 +232,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- footer -->
     <section>
         <footer>
@@ -222,7 +260,7 @@
                 </div>
         </footer>
     </section>
-    <script src="/js/script.js"></script>
+    <script src="/js/news.js"></script>
 </body>
 
 </html>

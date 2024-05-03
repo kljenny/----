@@ -111,9 +111,7 @@ body {
     line-height: 1.5;
     font-family: 'Oooh Baby', 'Noto Serif TC', serif;
     color: #333333;
-    background-color: #eeeeee;
-    background-image: url("https://www.transparenttextures.com/patterns/cross-scratches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: #fff;
 }
 
 ol,
