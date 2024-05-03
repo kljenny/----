@@ -109,7 +109,7 @@
 }
 
 .nav-logo {
-    width: 19%;
+    width: 15rem;
     padding: 10px 0 0px 20px;
 }
 
@@ -154,7 +154,8 @@
 
 .nav-icon {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: baseline;
     gap: 6%;
     margin-right: 50px;
     position: absolute;
@@ -162,13 +163,25 @@
 
 }
 
+@media screen and (max-width: 991px) {
+
+    .nav-icon form {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .nav-icon {
         margin-right: 80px;
     }
+
+    .nav-icon form {
+        display: none;
+    }
 }
 
 .nav-icon i {
+    font-size: 1.3rem;
     color: #2B2B2B;
     margin-right: 10px;
 }
