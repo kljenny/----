@@ -20,6 +20,14 @@
     flex-direction: column;
     padding: 50px 0;
     flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+@media (max-width:768px) {
+    .products-side-menu {
+        display: none;
+    }
+
 }
 
 .product-nav a {
@@ -72,15 +80,16 @@
 /* 圖 */
 .products-detail {
     width: 80%;
-    /* height:35%; */
     margin: auto;
     display: flex;
-    font-family: 'NotoSerif-DisplayRegular',
-        /* background-color: #faa; */
+    justify-content: space-around;
+}
 
-        /* @media ( width <= 768px ) {
+@media (max-width:768px) {
+    .products-detail {
         width: 100%;
-        flex-direction: column; */
+        flex-direction: column;
+    }
 }
 
 .product-img {
@@ -88,11 +97,22 @@
     height: 85%;
     display: flex;
     flex-direction: column;
-    /* background-color: #faa; */
-    /* 
-        @media ( width <= 768px ) {
-            width: 100%;
-        } */
+}
+
+@media (max-width: 768px) {
+    .product-img {
+        width: 100%;
+    }
+
+    .product-more {
+        overflow: scroll;
+    }
+}
+
+.product-main-img {
+    height: 420px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .product-img img {
@@ -101,30 +121,25 @@
 
 .product-more {
     width: 100%;
-    /* height: 145px; */
-    /* height: 80%; */
     margin-top: 10px;
     display: flex;
     align-items: center;
+    /* overflow: scroll; */
+}
 
-    overflow: scroll;
-    /* background-color: #faf; */
-
-    .img-scroll {
-        position: relative;
-    }
+.img-scroll {
+    position: relative;
+}
 
 
-    .product-more-img {
-        display: flex;
-    }
+.product-more-img {
+    display: flex;
+}
 
-    .product-more-img img {
-        width: 25%;
-        /* height: 100%; */
-        vertical-align: middle;
-        margin-right: 10px;
-    }
+.product-more-img img {
+    width: 18%;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /* 文 */
@@ -139,74 +154,124 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* background-color: #aaf; */
 }
 
-/* background-color: #aaf; */
-
-/* @media ( width <= 1200px ) {
-        font-size: clamp( 18px, 1.833vw, 22px );
-    
+@media (max-width:1200px) {
+    .product-info {
+        font-size: clamp(18px, 1.833vw, 22px);
     }
-    @media ( width <= 768px ) {
+}
+
+@media (max-width:768px) {
+    .product-info {
         width: 100%;
         margin: 20px auto;
-    } */
+    }
+
+    .product-main-img {
+        height: 400px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
 
 .info-text {
-    width: 90%;
+    width: 100%;
     height: 70%;
     margin-top: 15px;
     /* background-color: #070; */
+}
+
+.info-text h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .info-text p {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
     padding: 10px 0;
-    font-size: 1rem;
-    line-height: 35px;
-    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
     margin-bottom: 30px;
 }
 
 .info-text h3 {
     padding: 5% 0 0 2%;
-    font-family: 'NotoSerif-DisplayRegular';
 }
 
 /* 選單和按鈕 */
 /* 商品尺寸選擇 */
+.cart-btn h3 {
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
 .cart-btn select {
     width: 100%;
-    height: 100%;
-    /* margin-right: 20px; */
-    font-size: 18px;
+    height: 2.5rem;
+    font-size: 1.4rem;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #aaa;
-    margin-bottom: 5%;
-    /* 
-    @media (width < 768px) {
-        width: 30%;
-        font-size: clamp(16px, 1.5vw, 18px);
-    } */
+    border: 1px solid #333;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    .cart-btn select {
+        width: 100%;
+        padding: .5rem;
+    }
+}
+
+.cart-btn select:hover {
+    border: 1px solid #E79686;
 }
 
 .cart-btn option {
     width: 100%;
+    font-size: 1.2rem;
     display: inline-block;
     padding: 50px;
     margin-bottom: 50px;
 }
 
+/* 數量按鈕 */
 .btn-count {
     width: 100%;
     height: 100%;
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 
 .btn-count input {
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+    outline: none;
+    width: 50%;
+    font-size: 20px;
+    color: #2B2B2B;
+    text-align: center;
+}
+
+.btn-count input:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-count input:nth-child(3) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.btn-count input:nth-child(1),
+.btn-count input:nth-child(3) {
     border: none;
     outline: none;
     width: 50%;
@@ -215,25 +280,41 @@
     text-align: center;
 }
 
-.btn-group {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5%;
+.btn-count input:nth-child(1):hover,
+.btn-count input:nth-child(3):hover {
+    border: none;
+    outline: none;
+    width: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #E79686;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 .btn-group button {
-    width: 43%;
-    background-color: #C9C6B3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    background-color: #333;
     color: #fff;
     border: none;
-    font-size: 18px;
     border-radius: 5px;
+    transition: 1s ease;
 }
 
 .btn-group button:hover {
-    background-color: #a39c72;
+    background-color: #E79686;
     transition: 0.5s;
+    border-radius: 15px;
 }
 
 .share-info {
@@ -269,14 +350,69 @@
 }
 
 .social-web a img {
-    width: 2rem;
+    width: 4rem;
     gap: 10px;
     padding: 0 10px;
 }
 
 /* 商品詳細描述=============== */
+
+.desciption-note {
+    margin-bottom: 20px;
+}
+
+.desciption-note.hide {
+    margin-bottom: 0;
+}
+
+#tab-demo>ul {
+    display: block;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+.tab-title {
+    list-style: none;
+}
+
+#tab-demo>ul>li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -1px -1px 0;
+    border: 1px solid #BCBCBC;
+    height: 25px;
+    line-height: 25px;
+    background: #cdcdcd;
+    padding: 0 15px;
+    list-style: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#tab-demo>ul>li a {
+    color: #333;
+}
+
+#tab-demo>ul>li.active {
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+#tab-demo>.tab-inner {
+    clear: both;
+    color: #000;
+    border: 1px #BCBCBC solid;
+}
+
+.desciption-text .tab-inner {
+    padding-top: 15px;
+    height: 50px;
+}
+
 .section-product-desciption {
     width: 100%;
+    height: 300px;
     margin: auto;
 }
 
@@ -285,10 +421,11 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+
 }
 
 .product-desciption-container h2 {
-    font-size: 20px;
+    font-size: 18px;
     text-indent: 1em;
     border-bottom: 1px solid #aaa;
     letter-spacing: 0.1rem;
@@ -297,14 +434,34 @@
 .description-content {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
+
+.tab-inner table {
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0;
+    padding: 10px;
+    margin: 1rem;
+    border: 1px solid #6b675d;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+.tab-inner td {
+    background-color: #fff;
+    width: 30%;
+    height: 20px;
+    text-align: center;
+    border: 1px dotted #6b675d;
+}
+
 
 .desciption-text {
     width: 40%;
     font-size: 18px;
-    font-family: Georgia, serif;
+    align-self: baseline;
 }
 
 .desciption-note {
@@ -312,17 +469,16 @@
     margin-left: 8%;
 }
 
-.desciption-text h4 {
-    padding-top: 5%;
+
+.tab-inner p {
+    width: 100%;
+    line-height: 1.7;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
 }
 
-.desciption-text p {
-    padding-left: 3.5%;
-}
-
-/* .desciption-note .pic {
-    width: 70%;
-} */
 .desciption-note {
     width: 35%;
 }
@@ -332,10 +488,11 @@
 }
 
 .desciption-note .note-text {
+    font-size: 1.5rem;
     width: 40%;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 14%;
 }
 
 .desciption-note .note-text h4 {
@@ -343,109 +500,188 @@
     font-size: 20px;
 }
 
+.note-text p {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
 /* ===你可能會喜歡========== */
+.swiper {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper {
+    width: 80%;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3%;
+    transition: all .5s ease-out;
+}
+
 .popular-with {
     width: 95%;
     display: flex;
     flex-direction: column;
-    /* margin: 50px 30px 0; */
-    margin: auto;
+    margin: 10% auto 0;
     font-family: 'NotoSerif-DisplayRegular';
     position: relative;
-    z-index: 2;
-    /* background-color: #faa; */
+}
 
-    /* @media (width <=768px) {
-        width: 100%;
-    } */
+.popular-with h2 {
+    font-size: 1.5rem;
+    margin: 50px 0 10px 0;
+    border-bottom: 1px solid #aaa;
 
-    .text {
-        font-size: 24px;
-        padding-bottom: 25px;
-        margin: 150px 0 30px 0px;
-        border-bottom: 1px solid #aaa;
-        /* background-color: #faa; */
+}
 
-        /* @media (width <=1200px) {
-            font-size: clamp(20px, 2vw, 24px);
-        } */
-    }
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: scroll;
+}
 
-    .cards-scroll {
-        width: 100%;
-        /* height: 180px; */
-        /* margin: auto; */
-    }
+.card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-    .cards {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        /* flex-wrap: wrap; */
-        justify-content: space-between;
-        position: relative;
+.card a {
+    border-radius: 5px;
+    overflow: hidden;
+}
 
-        overflow: scroll;
-    }
+.card img:hover {
+    transform: scale(1.1);
+}
 
-    .card {
-        /* width: 30%; */
+.card .product-name {
+    border-top: 1px solid #aaa;
+    margin: 20px 0;
+    padding-top: 10px;
+    line-height: 40px;
+
+}
+
+.card .product-name a {
+    font-size: 18px;
+    color: #2B2B2B;
+    text-decoration-color: #f000;
+    transition: .5s;
+
+}
+
+.card .product-name a:hover {
+    text-decoration-color: #aaa;
+}
+
+.card .product-name a span {
+    font-size: 1.5rem;
+}
+
+@media (max-width:992px) {
+    .description-content {
         display: flex;
         flex-direction: column;
-        margin-right: 10px;
+    }
+}
 
+@media (max-width:768px) {
 
+    .section-product-desciption {
+        width: 100%;
+        height: 600px;
+        margin: auto;
     }
 
-    .card a {
-        border-radius: 5px;
-        overflow: hidden;
+    .description-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desciption-text,
+    .desciption-note {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .desciption-note {
+        margin-top: 300px;
+        align-items: center;
+    }
+
+
+    .desciption-text {
+        width: 100%;
+    }
+
+
+    .desciption-note img {
+        width: 60%;
     }
 
     .card img {
-        width: 215px;
-        height: 100%;
-        transform: scale(1, 1);
-        transition: all .5s ease-out;
-
-        /* @media (width <=768px) {
-            width: 180px;
-        } */
+        width: 80%;
+        height: 250px;
     }
 
-    .card img:hover {
-        transform: scale(1.1);
+    .note-text p {
+        width: 40%;
+        font-size: 1rem;
     }
 
-    .card .product-name {
-        border-top: 1px solid #aaa;
-        margin: 20px 0;
-        padding-top: 10px;
-        line-height: 40px;
-        /* background-color: #faa; */
+}
 
-        /* @media (width <=768px) {
-            line-height: 25px;
-        } */
+@media (max-width: 450px) {
+    .product-img {
+        width: 100%;
+        height: 390px;
     }
 
-    .card .product-name a {
-        font-size: 18px;
-        color: #2B2B2B;
-        text-decoration-color: #f000;
-        transition: .5s;
-        /* background-color: #faa; */
-        /* 
-        @media (width <=1200px) {
-            font-size: clamp(14px, 1.666vw, 18px);
-        } */
+    .desciption-note img {
+        width: 85%;
     }
 
-    .card .product-name a:hover {
-        text-decoration-color: #aaa;
+    .note-text p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .card img {
+        width: 80%;
+        height: 250px;
     }
 
     .card .product-name a span {
-        font-size: 1rem;
+        color: #333;
+    }
+
+    .product-name::after {
+        content: '';
+        display: inline-block;
+    }
+
+    .tab-inner table {
+        margin: auto;
+        width: 92%;
     }
 }

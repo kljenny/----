@@ -12,9 +12,9 @@
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous">
     </script>
-    <!-- CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+    <!-- 字體 -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
@@ -23,34 +23,23 @@
 
 <body>
     <!-- 導覽列 -->
-    <header class="main-header">
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="nav-container">
-            <a class="nav-logo" href="index.html">
-                <img src="/img/logo.svg" alt="logo">
-            </a>
-            <nav class="main-nav">
-                <a href="news.html">最新活動</a>
-                <a href="product-list.html">商品導覽</a>
-                <a href="about-us.html">關於我們</a>
-                <a href="contact-us.html">連絡我們</a>
-            </nav>
-            <nav class="nav-icon">
-                <form>
-                    <input type="search" placeholder="請輸入關鍵字">
-                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
-                </form>
-                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
-                <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
-            </nav>
-            <label for="menu-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
-    <!-- <div class="banners"></div> -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="/index.html" class="logo"><img src="/img/logo.svg" alt="logo"></a>
+
+        <nav class="navbar">
+            <a href="news.html">最新活動</a>
+            <a href="product-list.html">商品導覽</a>
+            <a href="about-us.html">關於我們</a>
+            <a href="contact-us.html">連絡我們</a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="/cart.html" class="fas fa-shopping-cart"></a>
+                <button class="btnLogin-popup"><a href="#" class="fas fa-user"></a></button>
+            </div>
+        </nav>
     </header>
 
     <!-- 會員登入、註冊 -->
@@ -156,14 +145,15 @@
             <!-- 商品資訊------------>
             <div class="products-detail">
                 <div class="product-img">
-                    <div class="product-main-img"><img id="large-img" src="/img/product01.jpg" alt="item_01"></div>
+                    <div class="product-main-img"><img id="large" src="/img/product01.jpg" alt="item_01"></div>
                     <div class="product-more">
                         <div class="img-scroll">
-                            <div class="product-more-img" id="small-img">
+                            <div class="product-more-img" id="smallPanel">
                                 <img src="/img/product01-1.png" alt="item_01">
                                 <img src="/img/product01-2.png" alt="item_02">
                                 <img src="/img/product01-3.png" alt="item_03">
                                 <img src="/img/product01-4.png" alt="item_04">
+                                <img src="/img/product01.jpg" alt="item_05">
                             </div>
                         </div>
                     </div>
@@ -172,27 +162,23 @@
                     <div class="info-text">
                         <h2>厄瓜多白玫瑰花束</h2>
                         <p> 頂級厄瓜多進口的大頭玫瑰，<br>珍珠油畫感的高級白色光澤，<br>搭配桔梗及小星花襯托出高雅氣息。 </p>
-                        <h3> NT$ 1,599</h3>
                     </div>
                     <!-- 選單和按鈕 -->
                     <div class="cart-btn">
+                        <h3> NT$ 1,599</h3>
                         <select name="size" id="">
                             <option>請選擇規格</option>
-                            <option value="S">大</option>
-                            <option value="M">中</option>
-                            <option value="L">小</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
                         </select>
                         <div class="btn-count">
-                            <input type="button" value="-" class="btnMinus">
-                            <input type="number" value="1">
-                            <input type="button" value="+" class="btnPlus">
+                            <input type="button" value="-" class="btnMinus" id="btnMinus0">
+                            <input type="number" value="1" id="qty0">
+                            <input type="button" value="+" class="btnPlus" id="btnPlus0">
                         </div>
                         <div class="btn-group">
                             <button type="submit">加入購物車</button>
-                            <button type="submit">立即購買</button>
-                            <div class="btn-heart">
-                                <a href="#"><i class="fa-regular fa-heart"></i></a>
-                            </div>
                         </div>
                     </div>
                     <div class="share-info">
@@ -209,113 +195,164 @@
     </div>
 
     <!-- 商品詳細描述--------------  -->
+
     <div class="section section-product-desciption">
         <div class="product-desciption-container">
-            <h2>商品描述 購買須知</h2>
-            <div class="description-content">
-                <div class="desciption-text">
-                    <h4>【商品描述】</h4>
-                    <p>花材:厄瓜多大號永生玫瑰、永生乾燥花材等
-                    </p>
-                    <h4>【購買須知】</h4>
-                    <p>
-                        如遇季節性花材缺貨狀況,搭配上會稍有變動,但整體色系感覺為主。<br>花材都是大自然物種,難免會有皺或小斑點,製作時我們會盡量剔除,但無法保證100%完美,若您較在意,歡迎門市挑選現場現貨花禮照片都是實品拍攝,於都是手工製作及花材的形狀、大小、姿態都不一樣,所以沒辦法與商品照片完全相同,但是保證給您與照片相同風格與氛圍的設計。<br>運送中些許花片掉落屬於正常現象收到商品後若有重受損,請於24小時内私訊照片及文字聯繫,我們將依狀況為您處理,逾時恕不受理。
-                    </p>
-                </div>
-                <div class="desciption-note">
+            <div id="tab-demo">
+                <ul class="tab-title">
+                    <li><a href="#tab01">商品描述</a></li>
+                    <li><a href="#tab02">購買須知</a></li>
+                </ul>
 
-                    <img src="/img/product-detail-note.svg" alt="product-detail-note">
+                <div class="description-content">
+                    <div class="desciption-text">
+                        <div id="tab01" class="tab-inner">
+                            <h4>【商品描述】</h4>
+                            <p>花材-<br>厄瓜多大號永生玫瑰、桔梗、小星花、麒麟草。<br>
+                                花束規格-<br>
+                                可以適合各種場合、用途選擇需要的尺寸。
+                            <table>
+                                <tr>
+                                    <td colspan="3">花束尺寸</td>
+                                </tr>
+                                <tr>
+                                    <td>S</td>
+                                    <td>M</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>30cm*25cm</td>
+                                    <td>40cm*35cm</td>
+                                    <td>50cm*40cm</td>
+                                </tr>
+                            </table>
+                            </p>
+                        </div>
+                        <div id="tab02" class="tab-inner">
+                            <h4>【購買須知】</h4>
+                            <p>如遇季節性花材缺貨狀況,搭配上會稍有變動,但整體色系感覺為主。<br>
+                                花材都是大自然物種,難免會有皺或小斑點,製作時我們會盡量剔除,但無法保證100%完美,若您較在意,歡迎門市挑選現場現貨花禮照片都是實品拍攝,於都是手工製作及花材的形狀、大小、姿態都不一樣,所以沒辦法與商品照片完全相同,但是保證給您與照片相同風格與氛圍的設計。<br>運送中些許花片掉落屬於正常現象收到商品後若有重受損,請於24小時内私訊照片及文字聯繫,我們將依狀況為您處理,逾時恕不受理。
+                            </p>
+                        </div>
+                    </div>
 
-                    <div class="note-text">
-                        <h4>鲜花商品</h4>
-                        <p>需保持通風良好,並確保花腳皆有浸在水裡,最佳觀賞期約為3-5日。</p>
+                    <div class="desciption-note">
+                        <img src="/img/product-detail-note.svg" alt="product-detail-note">
+                        <div class="note-text">
+                            <h4>鲜花商品</h4>
+                            <p>需保持通風良好,並確保花腳皆有浸在水裡,最佳觀賞期約為3-5日。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- 其他商品 -->
     <div class="popular-with">
-        <div class="text">
-            <h2>你可能會喜歡</h2>
-        </div>
-        <div class="cards-scroll">
-            <div class="cards">
-                <div class="card">
-                    <a href="#">
-                        <img src="/img/product02.png" alt="">
-                    </a>
-                    <div class="product-name">
-                        <a href="#"><span> 粉暉漸變玫瑰</span><br>
-                        </a> NT$ 980
+        <h2>你可能會喜歡</h2>
+        <div class="swiper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="#">
+                                <img src="/img/product02.png" alt="">
+                            </a>
+                            <div class="product-name">
+                                <a href="#"><span> 粉暉漸變玫瑰</span><br>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="#"><img src="/img/product03.png" alt=""></a>
+                            <div class="product-name">
+                                <a href="#"><span> 紫羅蘭晨露</span><br></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="#">
+                                <img src="/img/product04.png" alt="">
+                            </a>
+                            <div class="product-name">
+                                <a href="#"><span> 金棕玫瑰花束</span><br>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="#">
+                                <img src="/img/product05.png" alt="">
+                            </a>
+                            <div class="product-name">
+                                <a href="#"><span>月光白绸康乃馨</span><br>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <a href="#">
+                                <img src="/img/product06.png" alt="">
+                            </a>
+                            <div class="product-name">
+                                <a href="#"><span> 粉色綺白</span><br>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href="#"><img src="/img/product03.png" alt=""></a>
-                    <div class="product-name">
-                        <a href="#"><span> 紫羅蘭晨露</span><br></a> NT$ 1,280
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="/img/product04.png" alt="">
-                    </a>
-                    <div class="product-name">
-                        <a href="#"><span> 金棕絮語永生花束</span><br>
-                        </a> NT$ 880
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="/img/product05.png" alt="">
-                    </a>
-                    <div class="product-name">
-                        <a href="#"><span>月光白绸康乃馨</span><br>
-                        </a> NT$ 999
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="/img/product06.png" alt="">
-                    </a>
-                    <div class="product-name">
-                        <a href="#"><span> 粉色綺白</span><br>
-                        </a> NT$ 999
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
 
-    <!-- footer -->
-    <section>
-        <footer>
-            <div class="footer-container">
-                <span>CONTACT US</span>
 
-                <div class="footer-connection">
-                    <div class="footer-service">
-                        <span>服務條款<br>免責聲明<br>隱私權保護</spen>
-                    </div>
-                    <div class="connect">
-                        <div class="connect-info">
-                            <span> 聯絡我們<br> Tel : (03)425-1108<br> Email : Aitai Flower_Studio@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <span>
-                            ©AitaiFlower Studio Co. All rights reserved. <br>
-                            本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
-                        </span>
-                    </div>
-                    <div class="to-top">
-                        <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-                    </div>
+    <!-- footer -->
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <span>CONTACT US</span>
+                <div class="footer-icon">
+                    <a href="#"><img src="/img/instagram.png" alt="icon_google"></a>
+                    <a href="#"><img src="/img/facebook.png" alt="icon_FB"></a>
+                    <a href="#"><img src="/img/line.png" alt="icon_line"></a>
                 </div>
-        </footer>
+            </div>
+            <div class="footer-box">
+                <h3>網站說明</h3>
+                <a href="#">服務條款</a>
+                <a href="#">免責聲明</a>
+                <a href="#">隱私權保護</a>
+            </div>
+            <div class="footer-box">
+                <h3>聯絡我們</h3>
+                <a href="#">Tel : (03)425-1108</a>
+                <a href="#">Email : Aitai Flower<br>@gmail.com</a>
+            </div>
+            <div class="to-top">
+                <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="credit">
+            <span>©AitaiFlower Studio Co. All rights reserved. </span>|
+            本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
+        </div>
     </section>
+    <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/swiper-bundle.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>

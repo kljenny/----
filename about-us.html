@@ -22,34 +22,23 @@
 
 <body>
     <!-- 導覽列 -->
-    <header class="main-header">
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="nav-container">
-            <a class="nav-logo" href="index.html">
-                <img src="/img/logo.svg" alt="logo">
-            </a>
-            <nav class="main-nav">
-                <a href="news.html">最新活動</a>
-                <a href="product-list.html">商品導覽</a>
-                <a href="about-us.html">關於我們</a>
-                <a href="contact-us.html">連絡我們</a>
-            </nav>
-            <nav class="nav-icon">
-                <form>
-                    <input type="search" placeholder="請輸入關鍵字">
-                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
-                </form>
-                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
-                <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
-            </nav>
-            <label for="menu-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
-    <!-- <div class="banners"></div> -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo"><img src="/img/logo.svg" alt="logo"></a>
+
+        <nav class="navbar">
+            <a href="news.html">最新活動</a>
+            <a href="product-list.html">商品導覽</a>
+            <a href="about-us.html">關於我們</a>
+            <a href="contact-us.html">連絡我們</a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+                <button class="btnLogin-popup"><a href="#" class="fas fa-user"></a></button>
+            </div>
+        </nav>
     </header>
 
     <!-- 會員登入、註冊 -->
@@ -137,17 +126,11 @@
         </div>
     </div>
 
-    <!-- 商品總覽標題------------------>
-    <div class="news-title-container">
-        <div class="news-title">
-            <span>關於我們</span>
-            <h2>About Us</Area></h2>
-        </div>
-    </div>
-
+    <!-- 標題------------------>
+    <h1 class="heading"><span>關於我們</span><br>About Us</h1>
 
     <!-- 內文 -->
-    <div class="section-aboutUs">
+    <div class="section section-aboutUs">
         <div class="aboutUs-container">
             <div class="story">
                 <div class="pic">
@@ -155,15 +138,17 @@
                     <div class="story-box"></div>
                 </div>
                 <div class="story-text">
-                    <h2>品牌故事</h2>
-                    <h4>Brand Story</h4>
-                    <p>在日語中，「aitai（会いたい）」表示現在或未來的願望，意思是「想要見面」或「想念」某人。這個短語常用於表達對他人的思念或期待，以及希望能夠與對方見面的心情。<br>而我們想將這份思念具象化，並化做行動交到對方手中。這正是我們的心之所向，也是花店名稱的由來。<br>我們不僅僅是一個花店，更是您與親友、愛人之間情感交流的橋樑。我們致力於通過花朵的美麗和力量，讓每一刻都充滿愛和溫馨
+                    <div class="info-title">
+                        <h2>品牌故事</h2>
+                        <h4>Brand Story</h4>
+                    </div>
+                    <p>在日語中，「aitai（会いたい）」表示現在或未來的願望，意思是「想要見面」或「想念」某人。這個短語常用於表達對他人的思念或期待，以及希望能夠與對方見面的心情。<br>而我們想將這份思念具象化，並化做行動交到對方手中。這正是我們的心之所向，也是花店名稱的由來。<br>我們不僅僅是一個花店，更是您與親友、愛人之間情感交流的橋樑。
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section-teams">
+    <div class="section section-teams">
         <div class="teams-container">
             <h2>我們的團隊</h2>
             <h4>Best Team</h4>
@@ -184,7 +169,7 @@
                     </div>
                     <div class="member-info">
                         <h4>Jisoo</h4>
-                        <p>專長：室內花卉裝飾、活動花藝佈置。<br>經歷：擁有超過8年的室內花卉設計經驗，曾參與多個大型活動及國際展覽的花藝佈置。<br>證照：室內花卉裝飾師證書、活動花藝師證書。
+                        <p>專長：活動花藝佈置。<br>經歷：擁有超過8年的室內花卉設計經驗，曾參與多個大型活動的花藝佈置。<br>證照：室內花卉裝飾師證書、活動花藝師證書。
                         </p>
                     </div>
                 </div>
@@ -201,14 +186,16 @@
             </div>
         </div>
     </div>
-    <div class="section-shop">
+    <div class="section section-shop">
         <div class="shop-container">
             <div class="shop">
                 <div class="shop-info">
-                    <h2>門市資訊</h2>
-                    <h4>Shop Information</h4>
+                    <div class="info-title">
+                        <h2>門市資訊</h2>
+                        <h4>Shop Information</h4>
+                    </div>
                     <p>桃園市中壢區復興路46號8樓<br>
-                        8th Floor, No. 46, Fuxing Road,<br>Zhongli District, Taoyuan City,<br>Taiwan<br>
+                        8th Floor, No. 46,<br> Fuxing Road,Zhongli District, <br>Taoyuan City,Taiwan<br>
                         營業時間：週一至週日<br>
                         上午9:00 - 下午6:00<br>
                         電話：(123) 456-7890<br>

@@ -21,34 +21,23 @@
 
 <body>
     <!-- 導覽列 -->
-    <header class="main-header">
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="nav-container">
-            <a class="nav-logo" href="index.html">
-                <img src="/img/logo.svg" alt="logo">
-            </a>
-            <nav class="main-nav">
-                <a href="news.html">最新活動</a>
-                <a href="product-list.html">商品導覽</a>
-                <a href="about-us.html">關於我們</a>
-                <a href="contact-us.html">連絡我們</a>
-            </nav>
-            <nav class="nav-icon">
-                <form>
-                    <input type="search" placeholder="請輸入關鍵字">
-                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
-                </form>
-                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
-                <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
-            </nav>
-            <label for="menu-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
-    <!-- <div class="banners"></div> -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="index.html" class="logo"><img src="/img/logo.svg" alt="logo"></a>
+
+        <nav class="navbar">
+            <a href="news.html">最新活動</a>
+            <a href="product-list.html">商品導覽</a>
+            <a href="about-us.html">關於我們</a>
+            <a href="contact-us.html">連絡我們</a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+                <button class="btnLogin-popup"><a href="#" class="fas fa-user"></a></button>
+            </div>
+        </nav>
     </header>
 
     <!-- 會員登入、註冊 -->
@@ -135,14 +124,8 @@
             </form>
         </div>
     </div>
-
-    <!-- 購物車標題 -->
-    <div class="cart-title-container">
-        <div class="cart-title">
-            <span>購物車</span>
-            <h2>Cart</Area></h2>
-        </div>
-    </div>
+    <!-- 標題------------------>
+    <h1 class="heading"><span>購物車</span><br>Cart</h1>
 
     <!--進度條 -->
     <div class="progress-list">
@@ -162,78 +145,106 @@
     <!-- 下單區 -->
     <div class="cart-product-section">
         <div class="cart-product">
-            <div class="addmem">已經是會員? 登入後更方便管理訂單<button>登入會員</button></div>
+            <div class="addmem">已經是會員? 登入後方便管理訂單<button>登入會員</button></div>
             <div class="check-top">
                 <div class="cart-checkall">
-                    <input type="checkbox" class="checkall">
+                    <input type="checkbox" class="checkbtn" id="checkall">
                     <label>全選</label>
                 </div>
                 <div class="cart-num">購物車(0件)</div>
             </div>
-            <div class="cart-item">
-                <div class="checkGroup"><input type="checkbox" name="item" value="item01"></div>
-                <div class="item-img">
-                    <a href="#"><img src="/img/product01.jpg" alt="cart_item_01"></a>
-                </div>
-                <div class="cart-detail">
-                    <div class="text">
-                        <a href="#">
-                            <h2>厄瓜多大朵玫瑰</h2>
-                        </a>
-                        <span class="comm" style="display: none;">999</span>
-                    </div>
-                    <div class="cart-btn">
-                        <select name="size" id="">
-                            <option value="S">大</option>
-                            <option value="M">中</option>
-                            <option value="L">小</option>
-                        </select>
-                        <div class="btn-count">
-                            <input type="button" value="-" class="btnMinus">
-                            <input type="number" value="1">
-                            <input type="button" value="+" class="btnPlus">
+            <div class="cart-content">
+                <!-- item1 -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="checkGroup">
+                            <input type="checkbox" name="item" value="item01" class="checkbtn" id="checkone">
                         </div>
-                        <div class="btn-trash">
-                            <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                        <div class="item-img">
+                            <a href="#"><img src="/img/product01.jpg" alt="cart_item_01"></a>
                         </div>
-                    </div>
-                    <span>NT$ <span class="total">1599</span></span>
-                </div>
-            </div>
-            <div class="cart-item">
-                <div class="checkGroup"><input type="checkbox" name="item" value="item02"></div>
-                <div class="item-img">
-                    <a href="#">
-                        <img src="/img/product02.png" alt="cart_item_02"></a>
-                </div>
-                <div class="cart-detail">
-                    <div class="text">
-                        <a href="#">
-                            <h2>絮語玫瑰</h2>
-                        </a>
-                        <span class="comm" style="display: none;">999</span>
-                    </div>
-                    <div class="cart-btn">
-                        <select name="size" id="">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <div class="btn-count">
-                            <input type="button" value="-" class="btnMinus">
-                            <input type="number" value="1">
-                            <input type="button" value="+" class="btnPlus">
-                        </div>
-                        <div class="btn-trash">
-                            <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                        <!-- 細項 -->
+                        <div class="cart-detail">
+                            <div class="text">
+                                <a href="#">
+                                    <h2>厄瓜多大朵玫瑰</h2>
+                                </a>
+                                <span class="comm" style="display: none;">999</span>
+                            </div>
+                            <div class="cart-btn">
+                                <select name="size" id="">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                                <div class="btn-count">
+                                    <input type="button" value="-" class="btnMinus">
+                                    <input type="number" value="1" class="qty">
+                                    <input type="button" value="+" class="btnPlus">
+                                </div>
+                                <div class="btn-trash">
+                                    <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                                </div>
+                            </div>
+                            <span>NT$ <span class="total">1599</span></span>
                         </div>
                     </div>
-                    <span>NT$ <span class="total">999</span></span>
+                    <!-- item2 -->
+                    <div class="cart-item">
+                        <div class="checkGroup"><input type="checkbox" name="item" value="item02" class="checkbtn"
+                                id="checkone">
+                        </div>
+                        <div class="item-img">
+                            <a href="#">
+                                <img src="/img/product02.png" alt="cart_item_02"></a>
+                        </div>
+                        <div class="cart-detail">
+                            <div class="text">
+                                <a href="#">
+                                    <h2>絮語玫瑰</h2>
+                                </a>
+                                <span class="comm" style="display: none;">999</span>
+                            </div>
+                            <div class="cart-btn">
+                                <select name="size" id="">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                                <div class="btn-count">
+                                    <input type="button" value="-" class="btnMinus">
+                                    <input type="number" value="1" class="qty">
+                                    <input type="button" value="+" class="btnPlus">
+                                </div>
+                                <div class="btn-trash">
+                                    <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                                </div>
+                            </div>
+                            <span>NT$ <span class="total">999</span></span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="cart-coupon">
-                <p>已享有之優惠</p>
-                <p><span>會員優惠</span>母親節活動會員享8折</p>
+                <!-- 總價 -->
+                <div class="calculation">
+                    <div class="calculate">
+                        <div class="card">
+                            <span>小計</span>
+                            <span>NT$ <span id="sum2">2598</span></span>
+                        </div>
+                        <div class="card">
+                            <span>配送費</span>
+                            <span>NT$ <span id="shipping">150</span>
+                        </div>
+                        <div class="card">
+                            <span>優惠折扣</span>
+                            <span>NT$ <span id="shipping">-150</span>
+                        </div>
+                        <div class="card">
+                            <span> 總價</span>
+                            <span>$ <span id="sum3">1748</span></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -241,8 +252,8 @@
     <!-- 取貨資料 結帳 -->
     <div class="order-section">
         <div class="order-container">
+            <h4>取貨方式及取貨時間</h4>
             <div class="order-delivery">
-                <h4>取貨方式及取貨時間</h4>
                 <select name="delivery" id="">
                     <option value="pickup ">選擇取貨方式</option>
                     <option value="pickup ">門市取貨</option>
@@ -250,95 +261,56 @@
                 </select>
 
                 <div class="calendar-container">
-                    <select id="toggle-calendar">
-                        <option value="" disabled selected>選擇取貨日期</option>
-                    </select>
-                    <div class="calendar-wrapper" style="display: none;">
-                        <h1>December 2024</h1>
-                        <ol class="calendar">
-                            <li class="day-name">Sun</li>
-                            <li class="day-name">Mon</li>
-                            <li class="day-name">Tue</li>
-                            <li class="day-name">Wed</li>
-                            <li class="day-name">Thu</li>
-                            <li class="day-name">Fri</li>
-                            <li class="day-name">Sat</li>
-                            <li class="first-day">1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
-                            <li>19</li>
-                            <li>20</li>
-                            <li>21</li>
-                            <li>22</li>
-                            <li>23</li>
-                            <li>24</li>
-                            <li>25</li>
-                            <li>26</li>
-                            <li>27</li>
-                            <li>28</li>
-                            <li>29</li>
-                            <li>30</li>
-                            <li>31</li>
-                        </ol>
-                    </div>
+                    <input type="date" required="required" id="date">
                 </div>
             </div>
+            <h4>訂購人資訊</h4>
             <div class="buy-info">
-                <form action="">
-                    <h4>購買人資訊</h4>
-                    <label for="person"></label>
-                    <input type="text" id="person" name="person" placeholder="取貨人姓名"><br>
-                    <label for="phone"></label>
-                    <input type="text" id="phone" name="phone" placeholder="聯絡電話"><br>
-                    <label for="mail"></label>
+                <form action="#">
+                    <label for="person">訂購人姓名</label>
+                    <input type="text" id="person" name="person" placeholder="輸入姓名"><br>
+                    <label for="phone">連絡電話</label>
+                    <input type="text" id="phone" name="phone" placeholder="(09-xxxx-xxxx)"><br>
+                    <label for="mail">電子郵件</label>
                     <input type="text" id="mail" name="mail" placeholder="電子郵件"><br>
-                    <label for="address"></label>
+                    <label for="address">地址</label>
                     <input type="text" id="address" name="address" placeholder="收件地址"><br>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="備註"></textarea>
+                    <label for="textarea">備註</label>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
                     <h4>付款方式</h4>
-                    <input type="radio" name="cash" value="cash" id="male">
-                    <label for="cash">現金轉帳</label>
+                    <div class="cash">
+                        <input type="radio" name="cash" value="cash" id="male">
+                        <label for="cash">現金轉帳</label>
+                    </div>
             </div>
         </div>
-        <!-- 總價 -->
-        <div class="calculation">
-            <div class="calculate">
-                <div class="card">
-                    <span>小計</span>
-                    <span>NT$ <span id="sum2">2598</span></span>
-                </div>
-                <div class="card">
-                    <span>配送費</span>
-                    <span>NT$ <span id="shipping">150</span>
-                </div>
-                <div class="card">
-                    <span> 總價</span>
-                    <span>$ <span id="sum3">1748</span></span>
-                </div>
+
+        <!-- 收件人資訊 -->
+        <div class="order-container">
+            <h4>收件人資訊</h4>
+            <div class="receiver-same">
+                <input type="checkbox" class="receiver-checkbox" id="sameAs">
+                <label class="receiver-label"> 收件人同訂購人資料請打勾</label>
             </div>
-            <div class="to-pay">
-                <div class="btn-pay">
-                    <input type="submit" value="前往結帳">
-                </div>
+
+            <div class="receiver-info">
+                <form action="#">
+                    <label for="person"> 收件人姓名</label>
+                    <input type="text" id="rperson" name="person" placeholder="輸入姓名" class="receiver-input"><br>
+                    <label for="phone">聯絡電話</label>
+                    <input type="text" id="rphone" name="phone" placeholder="(09-xxxx-xxxx)" class="receiver-input"><br>
+                    <label for="address">地址</label>
+                    <input type="text" id="raddress" name="address" placeholder="收件地址" class="receiver-input"><br>
             </div>
         </div>
     </div>
 
+    </div>
+    <div class="to-pay">
+        <div class="btn-pay">
+            <input type="button" value="前往結帳">
+        </div>
+    </div>
 
     <!-- footer -->
     <section class="footer-section">

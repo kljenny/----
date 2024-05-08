@@ -12,45 +12,37 @@
 
     <!-- 導覽列icon -->
     <script src="https://kit.fontawesome.com/4162cd7817.js" crossorigin="anonymous"></script>
+    <!-- swiper -->
     <link rel="stylesheet" href="/swiper-bundle.min.css">
-
+    <!-- 字體 -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Noto+Serif+TC:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
     </style>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- 導覽列 -->
-    <header class="main-header">
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="nav-container">
-            <a class="nav-logo" href="index.html">
-                <img src="/img/logo.svg" alt="logo">
-            </a>
-            <nav class="main-nav">
-                <a href="news.html">最新活動</a>
-                <a href="product-list.html">商品導覽</a>
-                <a href="about-us.html">關於我們</a>
-                <a href="contact-us.html">連絡我們</a>
-            </nav>
-            <nav class="nav-icon">
-                <form>
-                    <input type="search" placeholder="請輸入關鍵字">
-                    <button><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
-                </form>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
-            </nav>
-            <label for="menu-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
-    <!-- <div class="banners"></div> -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="/index.html" class="logo"><img src="/img/logo.svg" alt="logo"></a>
+
+        <nav class="navbar">
+            <a href="news.html">最新活動</a>
+            <a href="product-list.html">商品導覽</a>
+            <a href="about-us.html">關於我們</a>
+            <a href="contact-us.html">連絡我們</a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+                <button class="btnLogin-popup"><a href="#" class="fas fa-user"></a></button>
+            </div>
+        </nav>
     </header>
 
     <!-- 會員登入、註冊 -->
@@ -143,7 +135,7 @@
     <!-- banner section -->
     <section class="banner-section" id="banner-section">
         <div class="banner-content">
-            <h3>Aitai Flower Shop</h3>
+            <!-- <h3>Aitai Flower Shop</h3> -->
             <span>生活要有點不一樣</span>
             <p>每一朵花都有它的語言<br>為你的每個重要時刻添彩</p>
             <a href="#" class="index-btn">shop now</a>
@@ -151,43 +143,48 @@
     </section>
     <!-- news section -->
     <section class="news-section" id="news-section">
-        <h1 class="heading"><span>最新活動</span>/News</h1>
+        <h1 class="heading"><span>最新活動</span><br>News</h1>
 
         <div class="row">
+
             <div class="video-container">
+
                 <video src="/img/736312813.046743.mp4" alt="最新活動影片" autoplay muted></video>
                 <h3>JOIN US</h3>
+
             </div>
             <div class="news-content">
-                <h3>近期活動</h3>
-                <div class="item-list">
-                    <div class="item">
-                        <div class="hashtag">
-                            <span>花藝手作課程</span>
-                            <span>2024/5/8</span>
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+                    <h3>近期活動</h3>
+                    <div class="item-list">
+                        <div class="item">
+                            <div class="hashtag">
+                                <span>花藝手作課程</span>
+                                <span>2024/5/8</span>
+                            </div>
+                            <a href="#">親手打造美麗花藝作品。立即報名，讓您的生活充滿花的美好！</a>
                         </div>
-                        <a href="#">親手打造美麗花藝作品。立即報名，讓您的生活充滿花的美好！</a>
-                    </div>
-                    <div class="item">
-                        <div class="hashtag">
-                            <span>慶祝母親節</span>
-                            <span>2024/05/12</pan>
+                        <div class="item">
+                            <div class="hashtag">
+                                <span>慶祝母親節</span>
+                                <span>2024/05/12</pan>
+                            </div>
+                            <a href="#">【特別優惠】所有精心挑選的花束和花藝作品享有特別折扣</a>
                         </div>
-                        <a href="#">【特別優惠】所有精心挑選的花束和花藝作品享有特別折扣</a>
-                    </div>
-                    <div class="item">
-                        <div class="hashtag">
-                            <span>歡送畢業生</span>
-                            <span>2024/06/30</span>
+                        <div class="item">
+                            <div class="hashtag">
+                                <span>歡送畢業生</span>
+                                <span>2024/06/30</span>
+                            </div>
+                            <a href="#">我們為畢業季設計了一系列特別的花束和花藝作品</a>
                         </div>
-                        <a href="#">我們為畢業季設計了一系列特別的花束和花藝作品</a>
-                    </div>
-                    <div class="item">
-                        <div class="hashtag">
-                            <span>七夕情人節</span>
-                            <span>2024/8/10</span>
+                        <div class="item">
+                            <div class="hashtag">
+                                <span>七夕情人節</span>
+                                <span>2024/8/10</span>
+                            </div>
+                            <a href="#">七夕之夜，星空下相遇，讓花語述說心底的情意。</a>
                         </div>
-                        <a href="#">七夕之夜，星空下相遇，讓花語述說心底的情意。</a>
                     </div>
                 </div>
                 <a href="#" class="news-content-btn">了解更多</a>
@@ -231,7 +228,7 @@
 
     <!-- hot section  -->
     <section class="Hot-section">
-        <h1 class="heading"><span>熱賣商品</span>/Hot Selling Products</h1>
+        <h1 class="heading"><span>熱賣商品</span><br>Hot Selling Products</h1>
         <div class="swiper">
             <!-- Swiper -->
             <div class="swiper mySwiper">
@@ -249,23 +246,32 @@
     </section>
     <!-- choose section  -->
     <section class="choice-section">
-        <h1 class="heading"><span>選擇我們的理由</span>/Why Choose Us</h1>
+        <h1 class="heading"><span>選擇我們的理由</span><br>Why Choose Us</h1>
         <div class="choice-wrap">
             <div class="choice-item">
                 <!-- item1 -->
+
                 <div class="choice-pic">
                     <img src="/img/choice01.png" alt="">
                 </div>
+
                 <div class="choice-txt">
-                    <h2>品質保證</h2>
-                    <p>我們以最高品質的鮮花為您打造美麗的花束，每一朵花都經過精心挑選，確保為您帶來最完美的花藝體驗。</p>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <h2>品質保證</h2>
+                        <p>我們以最高品質的鮮花為您打造美麗的花束，每一朵花都經過精心挑選，確保為您帶來最完美的花藝體驗。</p>
+                    </div>
                 </div>
+
+
+
             </div>
             <!-- item2 -->
             <div class="choice-item">
                 <div class="choice-txt">
-                    <h2>客製化服務</h2>
-                    <p>讓您可以根據自己的喜好和需求訂製獨特的花禮。從花材的選擇到設計風格的定制，我們將竭盡全力滿足您的每一個要求，讓您的禮物充滿個性和溫暖</p>
+                    <div data-aos="fade-right" data-aos-duration="1500">
+                        <h2>客製化服務</h2>
+                        <p>讓您可以根據自己的喜好和需求訂製獨特的花禮，我們將竭盡全力滿足您的每一個要求。</p>
+                    </div>
                 </div>
                 <div class="choice-pic">
                     <img src="/img/choice02.png" alt="">
@@ -277,16 +283,20 @@
                     <img src="/img/choice03.png" alt="">
                 </div>
                 <div class="choice-txt">
-                    <h2>快速配送服務</h2>
-                    <p>我們的快速配送服務，保證您的花禮能夠及時送達目的地。無論是生日還是節日祝福，為您帶來最溫馨的驚喜。
-                    </p>
+                    <div data-aos="fade-left" data-aos-duration="1500">
+                        <h2>快速配送服務</h2>
+                        <p>我們的快速配送服務，無論是生日還是節日祝福，為您帶來最溫馨的驚喜。
+                        </p>
+                    </div>
                 </div>
             </div>
             <!-- item4 -->
             <div class="choice-item">
                 <div class="choice-txt">
-                    <h2>專屬優惠•享受更多購物樂趣</h2>
-                    <p>我們定期舉辦各類特惠活動，讓您可以享受到更多的購物樂趣。</p>
+                    <div data-aos="fade-right" data-aos-duration="1500">
+                        <h2>享受更多購物樂趣</h2>
+                        <p>我們定期舉辦各類特惠活動，讓您可以享受到更多的購物樂趣。</p>
+                    </div>
                 </div>
                 <div class="choice-pic">
                     <img src="/img/choice04.png" alt="">
@@ -315,7 +325,7 @@
             <div class="footer-box">
                 <h3>聯絡我們</h3>
                 <a href="#">Tel : (03)425-1108</a>
-                <a href="#">Email : Aitai Flower_Studio@gmail.com</a>
+                <a href="#">Email:Aitai Flower<br>@gmail.com</a>
             </div>
             <div class="to-top">
                 <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
@@ -328,8 +338,11 @@
     </section>
     <script src="/js/script.js"></script>
     <script src="/swiper-bundle.min.js"></script>
-    <script src="/js/index03.js"></script>
-
+    <script src="/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

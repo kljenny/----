@@ -22,34 +22,23 @@
 
 <body>
     <!-- 導覽列 -->
-    <header class="main-header">
-        <input type="checkbox" name="" id="menu-switch">
-        <div class="nav-container">
-            <a class="nav-logo" href="index.html">
-                <img src="/img/logo.svg" alt="logo">
-            </a>
-            <nav class="main-nav">
-                <a href="news.html">最新活動</a>
-                <a href="product-list.html">商品導覽</a>
-                <a href="about-us.html">關於我們</a>
-                <a href="contact-us.html">連絡我們</a>
-            </nav>
-            <nav class="nav-icon">
-                <form>
-                    <input type="search" placeholder="請輸入關鍵字">
-                    <button><i class="fa-solid fa-magnifying-glass"><a href="#"></a></i></button>
-                </form>
-                <i class="fa-solid fa-cart-shopping"><a href="cart.html"></a></i>
-                <button class="btnLogin-popup"><i class="fa-solid fa-user"></i></button>
-            </nav>
-            <label for="menu-switch" class="hb">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </header>
-    <!-- <div class="banners"></div> -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="/index.html" class="logo"><img src="/img/logo.svg" alt="logo"></a>
+
+        <nav class="navbar">
+            <a href="news.html">最新活動</a>
+            <a href="product-list.html">商品導覽</a>
+            <a href="about-us.html">關於我們</a>
+            <a href="contact-us.html">連絡我們</a>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="/cart.html" class="fas fa-shopping-cart"></a>
+                <button class="btnLogin-popup"><a href="#" class="fas fa-user"></a></button>
+            </div>
+        </nav>
     </header>
 
     <!-- 會員登入、註冊 -->
@@ -140,173 +129,205 @@
 
 
     <!-- 商品總覽標題------------------>
-    <h1 class="heading"><span>商品總覽</span>/Product List</h1>
+    <h1 class="heading"><span>商品總覽</span><br>Product List</h1>
 
 
     <!-- 商品列表 -->
-
-    <div class="section-products">
-        <div class="products-container">
-            <!-- 商品總覽側邊選單------------------>
-            <div class="products-side-menu">
-                <nav class="products-nav">
-                    <a href="#">
-                        -全部商品-</a>
-                    <a href="#">
-                        <img src="/img/list-icon01.svg" alt=""></i><span>鮮花花束</span></a>
-                    <a href="#">
-                        <img src="/img/list-icon02.svg" alt=""><span>乾燥花束</span></a>
-                    <a href="#"><img src="/img/list-icon03.svg" alt=""><span>周花服務</span></a>
-                </nav>
-            </div>
-            <!-- 商品列表------------>
-            <div class="card-items">
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product01.jpg" alt="list_item_01">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>厄瓜多大朵玫瑰</span>
-                                <br></a>
-                            <p>NT$ 1599</p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product02.png" alt="list_item_02">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>絮語玫瑰</span>
-                                <br></a>
-                            <p>NT$ 999</p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-
-                </div>
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product03.png" alt="list_item_03">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>鬱金紫香譚 </span>
-                                <br></a>
-                            <p>NT$ 799</p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-
-                </div>
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product04.png" alt="list_item_04">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>向日葵乾燥花束</span>
-                                <br></a>
-                            <p> NT$ 599</p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product05.png" alt="list_item_05">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>單枝康乃馨</span><br></a>
-                            <p> NT$ 299 </p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product06.png" alt="list_item_06">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>康乃馨花束</span><br></a>
-                            <p> NT$ 699 </p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product07.jpg" alt="list_item_07">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>桔梗桌花</span><br></a>
-                            <p> NT$ 699 </p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/product08.png" alt="list_item_08">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>卡斯比亞桌花</span><br></a>
-                            <p> NT$ 699 </p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-item">
-                    <div class="item-img">
-                        <a href="#">
-                            <img src="/img/bestseller03.jpg">
-                        </a>
-                    </div>
-                    <div class="item-text">
-                        <div class="item-txt">
-                            <a href="#">
-                                <span>繡球花盅</span><br></a>
-                            <p> NT$ 699 </p>
-                        </div>
-                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-            </div>
+    <div class="products-container">
+        <!-- 商品總覽側邊選單------------------>
+        <div class="products-side-menu">
+            <nav class="products-nav">
+                <a href="#">
+                    -全部商品-</a>
+                <a href="#">
+                    <img src="/img/list-icon01.svg" alt=""></i><span>鮮花花束</span></a>
+                <a href="#">
+                    <img src="/img/list-icon02.svg" alt=""><span>乾燥花束</span></a>
+                <a href="#"><img src="/img/list-icon03.svg" alt=""><span>周花服務</span></a>
+            </nav>
         </div>
+
+        <!-- 商品列表------------>
+        <div class="card-items">
+
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product01.jpg" alt="list_item_01">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>厄瓜多大朵玫瑰</span>
+                            <br></a>
+                        <p>NT$ 1599</p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product02.png" alt="list_item_02">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>絮語玫瑰</span>
+                            <br></a>
+                        <p>NT$ 999</p>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product03.png" alt="list_item_03">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>鬱金紫香譚 </span>
+                            <br></a>
+                        <p>NT$ 799</p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product04.png" alt="list_item_04">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>黃玫瑰花束</span>
+                            <br></a>
+                        <p> NT$ 599</p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product05.png" alt="list_item_05">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>單枝康乃馨</span><br></a>
+                        <p> NT$ 299 </p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product06.png" alt="list_item_06">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>康乃馨花束</span><br></a>
+                        <p> NT$ 699 </p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product07.jpg" alt="list_item_07">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>桔梗桌花</span><br></a>
+                        <p> NT$ 699 </p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/product08.png" alt="list_item_08">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="#">
+                            <span>卡斯比亞桌花</span><br></a>
+                        <p> NT$ 699 </p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="item-img">
+                    <a href="/product.html">
+                        <img src="/img/bestseller03.jpg">
+                    </a>
+                    <div class="icons">
+                        <a href="javascript:void(0);" class="fas fa-heart heart-icon"></a>
+                        <a href="javascript:void(0);" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-txt">
+                        <a href="/product.html">
+                            <span>繡球花盅</span><br></a>
+                        <p> NT$ 699 </p>
+                    </div>
+                    <a href="javascript:void(0);"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </div>
 
     <!-- footer -->
@@ -340,7 +361,9 @@
             本網站為TibaMe_前端設計工程師班學員專題成果作品本平台僅供學習、展示之用。
         </div>
     </section>
+
     <script src="/js/script.js"></script>
+    <script src="/js/product-list.js"></script>
 </body>
 
 </html>

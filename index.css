@@ -1,5 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
 html {
-    font-size: 62.5%;
+    font-size: 80%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
@@ -11,7 +22,7 @@ section {
 
 .heading {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.3rem;
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
@@ -25,12 +36,13 @@ section {
 .index-btn {
     display: inline-block;
     margin-top: 1rem;
-    border-radius: 5rem;
+    border-radius: 3rem;
     background-color: #333;
     color: #fff;
-    padding: .9rem 3.5rem;
+    padding: .8rem 2rem;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    ;
 }
 
 .index-btn:hover {
@@ -51,21 +63,21 @@ section {
 }
 
 .banner-content h3 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: 'NotoSerif-DisplayRegular', sans-serif;
     color: #fff;
 }
 
 .banner-content span {
-    font-size: 3.5rem;
-    color: #E79686;
+    font-size: 5rem;
+    color: #fff;
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .banner-content p {
-    font-size: 1.5rem;
-    color: #fff;
+    font-size: 1.7rem;
+    color: #ffcbcb;
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -83,7 +95,7 @@ section {
 
 .news-section .row .video-container {
     position: relative;
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
 }
 
 .news-section .row .video-container video {
@@ -100,7 +112,7 @@ section {
     top: 50%;
     font-weight: 1000;
     transform: translateY(-50%);
-    font-size: 3rem;
+    font-size: 2rem;
     background: #ffffffe4;
     width: 100%;
     padding: 0.5rem 2rem;
@@ -109,14 +121,14 @@ section {
 }
 
 .news-section .row .news-content {
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     padding-left: 40px;
     display: flex;
     flex-direction: column;
 }
 
 .news-section .row .news-content h3 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #333;
 }
 
@@ -179,23 +191,24 @@ section {
 }
 
 .news-content-btn {
-    width: 12%;
+
     align-self: flex-end;
     display: inline-block;
     margin-top: 2rem;
     border-radius: 5rem;
     background-color: #333;
     color: #fff;
-    padding: .9rem 3.5rem;
+    padding: .8rem 2.5rem;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-right: 2%;
 }
 
-.news-content-btn :hover {
+.news-content-btn:hover {
     background-color: #E79686;
 }
+
 
 .icons-container {
     background: #eee;
@@ -212,7 +225,7 @@ section {
     padding: 2rem;
     display: flex;
     align-items: center;
-    flex: 1 1 15rem;
+    flex: 1 1 20rem;
 }
 
 .icons-container .icons img {
@@ -223,13 +236,35 @@ section {
 .icons-container .icons h3 {
     color: #333;
     padding-bottom: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .icons-container .icons span {
     color: #555;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
+
+@media (min-width:1200px) {
+    .icons-container {
+        background: #eee;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .icons-container .icons {
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex: 1 1 20rem;
+    }
+
+}
+
 
 /* 熱賣商品 */
 .swiper {
@@ -280,13 +315,13 @@ section {
 .choice-item h2 {
     font-weight: 700;
     font-size: 20px;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
 
 }
 
 .choice-item p {
     font-weight: 300;
-    letter-spacing: 0.3rem;
+    letter-spacing: 2px;
     font-size: 1.5rem;
 
 }
@@ -334,10 +369,21 @@ section {
 }
 
 
-
 @media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
     section {
         padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
     }
 
     .banner-section {
@@ -349,33 +395,125 @@ section {
     }
 
     .banner-content span {
-        font-size: 2rem;
+        font-size: 5rem;
     }
 }
 
+
+
 @media (max-width:768px) {
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
     .item::after {
         width: 90%;
     }
-}
 
-@media (max-width:568px) {
-    .item::after {
-        width: 85%;
+    .choice-wrap {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .news-content-btn {
-        width: 11%;
+    .choice-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #C9C6B3;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
+    .choice-wrap .choice-item:nth-child(2),
+    .choice-wrap .choice-item:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .choice-wrap .choice-item:nth-child(2) .choice-pic img,
+    .choice-wrap .choice-item:nth-child(4) .choice-pic img {
+        margin-left: 0px;
+    }
+
+    .choice-wrap .choice-item:nth-child(2) .choice-txt,
+    .choice-wrap .choice-item:nth-child(4) .choice-txt {
+        margin-right: 0px;
+    }
+
+    .choice-pic img:nth-child(1),
+    .choice-pic img:nth-child(3) {
+        margin-left: -32px;
+    }
+
+
+    .choice-item .choice-pic,
+    .choice-item .choice-txt {
+        width: 100%;
+    }
+
+    .choice-item .choice-txt {
+        padding: 7px;
+    }
+
+    .choice-txt h2 {
+        font-size: 1.4rem;
+    }
+
+    .choice-txt p {
+        font-size: 1.3rem;
+
+    }
+
 }
+
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
     }
 
+
+    .banner-section {
+        background-position: center;
+    }
+
+    .banner-content span {
+        font-size: 3rem;
+    }
+
+    .banner-content p {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+
     .heading h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .news-section .row .news-content {
@@ -388,7 +526,62 @@ section {
     }
 
     .news-content-btn {
-        width: 14%;
+        width: 50%;
     }
 
+    .choice-wrap {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choice-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        background: #C9C6B3;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .choice-wrap .choice-item:nth-child(2),
+    .choice-wrap .choice-item:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .choice-wrap .choice-item:nth-child(2) .choice-pic img,
+    .choice-wrap .choice-item:nth-child(4) .choice-pic img {
+        margin-left: 0px;
+    }
+
+    .choice-wrap .choice-item:nth-child(2) .choice-txt,
+    .choice-wrap .choice-item:nth-child(4) .choice-txt {
+        margin-right: 0px;
+    }
+
+    .choice-pic img:nth-child(1),
+    .choice-pic img:nth-child(3) {
+        margin-left: -14px;
+    }
+
+
+    .choice-item .choice-pic,
+    .choice-item .choice-txt {
+        width: 100%;
+    }
+
+    .choice-item .choice-txt {
+        padding: 7px;
+    }
+
+    .choice-txt h2 {
+        font-size: 1.4rem;
+    }
+
+    .choice-txt p {
+        font-size: 1.3rem;
+
+    }
 }

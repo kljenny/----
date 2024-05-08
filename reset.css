@@ -109,9 +109,13 @@ section {
 
 body {
     line-height: 1.5;
+    letter-spacing: 1px;
     font-family: 'Oooh Baby', 'Noto Serif TC', serif;
     color: #333333;
     background-color: #fff;
+    /* background-color: #fcf5ed;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 ol,
