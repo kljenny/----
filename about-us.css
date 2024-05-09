@@ -95,6 +95,18 @@
 .section-teams {
     width: 100%;
     background-color: #EFE2D9;
+    position: relative;
+}
+
+.about-pic {
+    top: 0;
+    right: 0;
+    width: 290px;
+    position: absolute;
+}
+
+.about-pic img {
+    width: 100%;
 }
 
 .teams-container {
@@ -321,6 +333,10 @@
 
     .shop-info {
         margin-right: 0;
+    }
+
+    .about-pic {
+        display: none;
     }
 }
 
