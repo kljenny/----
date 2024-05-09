@@ -66,13 +66,14 @@ section {
 }
 
 .banner-content h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: 'NotoSerif-DisplayRegular', sans-serif;
     color: #fff;
 }
 
 .banner-content span {
-    font-size: 5rem;
+    font-size: 4rem;
+    letter-spacing: 3px;
     color: #fff;
     padding: 1rem 0;
     line-height: 1.5;
