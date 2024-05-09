@@ -44,3 +44,15 @@ window.addEventListener("load", function () {
         }
     }
 })
+
+
+//刪除
+$(document).ready(function () {
+    // 綁定點擊事件到所有的刪除按鈕
+    $('.btn-trash a').on('click', function (e) {
+        e.preventDefault(); // 阻止連結默認的行為
+
+        // 獲取最近的 .cart-item 元素，並將其從 DOM 中移除
+        $(this).closest('.cart-item').remove();
+    });
+});

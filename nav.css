@@ -105,9 +105,11 @@ header .fa-bars {
     }
 
     header .navbar {
+        display: flex;
+        flex-direction: column;
         z-index: 1;
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 0;
         right: 0;
         background: #eee;
@@ -127,12 +129,15 @@ header .fa-bars {
         display: block;
     }
 
-    header .navbar a :hover {
+    header .navbar a:hover {
         background-color: #E79686;
     }
 }
 
 @media (max-width:450px) {
+    header .navbar {
+        top: 20%;
+    }
 
     .navbar {
         display: flex;
@@ -147,220 +152,16 @@ header .fa-bars {
         color: #E79686;
     }
 
-}
-
-
-
-
-/* .main-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.nav-container {
-    display: flex;
-    position: relative;
-    justify-content: flex-start;
-    align-items: center;
-    height: 75px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0px 5px 5px #645a5a;
-}
-
-@media screen and (max-width: 767px) {
-    .nav-container {
-        display: flex;
-        position: relative;
-        justify-content: space-between;
+    .card-items {
+        padding: 0;
     }
 }
-
-.nav-container .hb {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    background-color: #888;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.nav-container .hb span {
-    width: 80%;
-    height: 2px;
-    background-color: #fff;
-}
-
-#menu-switch:checked~.nav-container .hb {
-    background-color: #E79686;
-}
-
-@media screen and (min-width: 768px) {
-    .nav-container .hb {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .nav-container .main-nav {
-        display: none;
-        position: absolute;
-        background-color: #E79686;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        z-index: 1;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .nav-container .main-nav {
-        display: flex;
-    }
-}
-
-.nav-container .main-nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #0c0c0c;
-    font-size: 18px;
-}
-
-.nav-container .main-nav a:hover {
-    color: #000000;
-}
-
-
-@media screen and (max-width: 767px) {
-    .nav-container .main-nav a {
-        color: #fff;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .nav-container .main-nav a+a {
-        border-top: 1px solid #fff;
-    }
-
-    #menu-switch:checked~.nav-container .main-nav {
-        display: block;
-
-    }
-}
-
-.nav-logo {
-    width: 15rem;
-    padding: 10px 0 0px 20px;
-}
-
-.nav-logo img {
-    width: 100%;
-}
-
-
-.nav-icon form {
-    width: 150px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    border-radius: 100px;
-    border: #131313 1px solid;
-    padding: 5px 10px;
-}
-
-.nav-icon form input,
-.nav-icon form button {
-    border: none;
-    background-color: transparent;
-    color: #ffffffa0;
-    text-decoration: none;
-    position: relative;
-}
-
-.nav-icon form input {
-    width: 130px;
-    color: #2B2B2B;
-}
-
-.nav-icon form button {
-    width: 20px;
-}
-
-.nav-icon form input:focus,
-.nav-icon form button:focus {
-    outline: none;
-}
-
-
-.nav-icon {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 6%;
-    margin-right: 50px;
-    position: absolute;
-    right: 10px;
-
-}
-
-@media screen and (max-width: 991px) {
-
-    .nav-icon form {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .nav-icon {
-        margin-right: 80px;
-    }
-
-    .nav-icon form {
-        display: none;
-    }
-}
-
-.nav-icon i {
-    font-size: 1.3rem;
-    color: #2B2B2B;
-    margin-right: 10px;
-}
-
-.nav-icon i:hover {
-    color: #E79686;
-    margin-right: 10px;
-}
-
-.btnLogin-popup {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-.banners {
-    width: 80%;
-    height: 120px;
-    background: url(./img/banners.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    margin-left: 100%;
-    border-radius: 0 0 0 10px;
-
-
-} */
 
 
 /* footer------------------------------------- */
 
 .footer-section {
-    background-color: #E79686;
+    background-color: #eba89b;
     color: #fff;
 }
 
@@ -387,7 +188,8 @@ header .fa-bars {
 }
 
 .footer-contact img {
-    width: 15%;
+    margin-top: 2rem;
+    width: 12%;
 }
 
 .footer-container .footer-box {
@@ -517,6 +319,9 @@ header .fa-bars {
 
 @media (max-width:450px) {
 
+    .footer-contact img {
+        width: 25%;
+    }
 
     .footer-container {
         gap: 1rem;

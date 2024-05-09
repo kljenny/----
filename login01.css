@@ -27,12 +27,9 @@
 @media (max-width:450px) {
     .wrapper {
         width: 350px;
-        background-image: linear-gradient(to bottom, #FFCBCB, #FFFFFF);
-
+        /* background-image: linear-gradient(to bottom, #FFCBCB, #FFFFFF); */
     }
 }
-
-
 
 .wrapper.active-popup {
     align-items: center;
@@ -87,7 +84,7 @@
 .form-box-login h2,
 .form-box-register h2 {
     padding-top: 27px;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -104,7 +101,7 @@
     top: 50%;
     left: 5px;
     transform: translateY(-120%);
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #162938;
     font-weight: 500;
     pointer-events: none;

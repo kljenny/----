@@ -3,15 +3,28 @@
     text-align: center;
     font-size: 2rem;
     color: #333;
-    padding: 1rem;
-    margin: 2rem 0;
-    background-color: #fec2ca65;
+    padding: 4%;
+    margin-bottom: 3rem;
+    /* background-color: #fec2ca65; */
+    background-image: url(/img/banners.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* backdrop-filter: blur(30px); */
 }
 
+
 .heading span {
-    color: #E79686;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff95;
+    /* color: #E79686; */
     font-size: 2.6rem;
+    color: #333;
 }
+
+
 
 /* <!-- 商品總覽側邊選單------------------> */
 .products-side-menu {
